@@ -1,23 +1,20 @@
-.container
+.container.header__container
 	.header-info.d-flex
-		a(href="#!").header-info__logo LightOpt
-		.header-info__search.d-flex
+		a(href="#!").header-info__logo
+			img(src="../../img/LightOpt.png", alt="LightOpt")
+		.header-info__search
 			input(type="text" placeholder="Поиск по каталогу").header-info__input-text
-			<svg class="svg svg-search"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-		.header-info__btns.d-flex
-			button.login.btn-reset
-				<svg class="svg"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M399 384.2C376.9 345.8 335.4 320 288 320l-64 0c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg>
-			button.favorites.btn-reset
-				<svg class="svg"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
-			button.order.btn-reset
-				<svg class="svg"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18"><path d="M12.8475 15.525L15.975 12.42L15.03 11.475L12.8475 13.6125L11.97 12.735L11.025 13.7025L12.8475 15.525ZM2.7 5.4H13.5V3.6H2.7V5.4ZM13.5 18C12.255 18 11.1939 17.5611 10.3167 16.6833C9.4395 15.8055 9.0006 14.7444 9 13.5C8.9994 12.2556 9.4383 11.1945 10.3167 10.3167C11.1951 9.4389 12.2562 9 13.5 9C14.7438 9 15.8052 9.4389 16.6842 10.3167C17.5632 11.1945 18.0018 12.2556 18 13.5C17.9982 14.7444 17.5593 15.8058 16.6833 16.6842C15.8073 17.5626 14.7462 18.0012 13.5 18ZM0 17.1V0H16.2V7.8075C15.78 7.5975 15.3411 7.4436 14.8833 7.3458C14.4255 7.248 13.9644 7.1994 13.5 7.2H2.7V9H9.09C8.835 9.255 8.5989 9.5325 8.3817 9.8325C8.1645 10.1325 7.9731 10.455 7.8075 10.8H2.7V12.6H7.2675C7.2375 12.75 7.2189 12.8964 7.2117 13.0392C7.2045 13.182 7.2006 13.3356 7.2 13.5C7.2 14.13 7.2864 14.7339 7.4592 15.3117C7.632 15.8895 7.8906 16.4406 8.235 16.965L8.1 17.1L6.75 15.75L5.4 17.1L4.05 15.75L2.7 17.1L1.35 15.75L0 17.1Z" fill="black"/></svg>
-			button.menu-open.btn-reset
-				<svg class="svg"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
-	nav.header__nav
+			button.header-info__btn.header-info__menu-search.btn-reset 
+		ul.header-info__menu.d-flex
+			li.header-info__menu-item
+				button.header-info__btn.btn-reset.header-info__menu--acc
+			li.header-info__menu-item
+				button.header-info__btn.btn-reset.header-info__menu--favorites
+			li.header-info__menu-item
+				button.header-info__btn.btn-reset.header-info__menu--order
+	nav.header__nav.nav__container
 		ul.nav__list
 			li.nav__item
-				button.menu-open.nav-menu-open.btn-reset
-					<svg class="svg"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
 				a.nav__link(href="#!") каталог
 			li.nav__item
 				a.nav__link(href="#!") Архитекторам и дизайнерам
@@ -25,15 +22,3 @@
 				a.nav__link(href="#!") Где купить?
 			li.nav__item
 				a.nav__link(href="#!") Контакты
-	.header__breadcrumbs
-		ul.breadcrumbs__list.d-flex
-			li.breadcrumbs__item
-				a.breadcrumbs__links(href="#!") Главная
-			li.breadcrumbs__item
-				a.breadcrumbs__links(href="#!") Продукция
-			li.breadcrumbs__item
-				a.breadcrumbs__links(href="#!") Внутреннее освещение
-			li.breadcrumbs__item
-				a.breadcrumbs__links(href="#!") Люстры
-			li.breadcrumbs__item
-				a.breadcrums__links(href="#!") Потолочная люстра Tet-A-Tet A1704LM-5CC

@@ -1,8 +1,12 @@
 @import 'fonts';
 @import 'css-variables';
 @import 'default';
-@import '../template/header/style';
-@import '../template/footer/style';
+@import 'mixins';
+
 
 // Components
+@import '../template/header/style';
+@import '../template/footer/style';
+@import '../template/breadcrumbs/style';
+@import '../template/main-title/style';
 @import '../components/spinner/style';

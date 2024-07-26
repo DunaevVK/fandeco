@@ -1,0 +1,30 @@
+@import '../../scss/sass-variables';
+
+.container__main-title {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-title {
+    margin-top: 10px;
+    max-height: 100px;
+    background-color: var(--color-grey);
+    padding: 15px 0;
+}
+
+.main-title__title {
+    padding: 10px 0;
+    margin: 0;
+    text-align: left;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 700;
+}
+
+.main-title__text-count {
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0;
+    margin-left: 40px;
+}
