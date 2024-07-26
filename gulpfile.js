@@ -30,7 +30,10 @@ const fonts = () => src('./src/fonts/src/*.*')
 	}))
 	.pipe(src('./src/fonts/*.ttf'))
 	.pipe(ttf2woff2())
-	.pipe(dest("./src/fonts"))
+	.pipe(dest("build/fonts"))
+
+const images = () => src('./src/img/*.*')
+	.pipe(dest("build/img"))
 
 const devVendorCss = () => src("./src/vendor/scss/**/*.scss")
 	.pipe(plumber({
@@ -276,7 +279,9 @@ exports.default = series(
 		devVendorJs,
 		devCommonJs,
 		devCustomJs,
-		devHtml
+		devHtml,
+		fonts,
+		images
 	),
 	server
 )
@@ -291,7 +296,9 @@ exports.build = series(
 		buildVendorJs,
 		buildCommonJs,
 		buildCustomJs,
-		buildHtml
+		buildHtml,
+		fonts,
+		images
 	),
 
 	(done) => {
