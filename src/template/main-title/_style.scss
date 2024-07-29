@@ -1,6 +1,8 @@
 @import '../../scss/sass-variables';
 
 .container__main-title {
+    display: flex;
+    align-items: baseline;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
@@ -27,4 +29,29 @@
     font-size: 20px;
     margin: 0;
     margin-left: 40px;
+}
+
+@media (max-width: 768px) {
+    .container__main-title {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+        gap: 6px;
+    }
+
+    .main-title__title {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-title__text-count {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .main-title {
+        max-height: max-content;
+        padding: 15px 0;
+    }
 }

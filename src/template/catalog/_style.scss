@@ -1,0 +1,15 @@
+@import '../../scss/sass-variables';
+
+.catalog {
+    margin-top: 30px;
+}
+
+.catalog-content {
+
+    display: flex;
+
+    // gap: 20px;
+    @media (max-width: 1200px) {
+        flex-direction: column;
+    }
+}

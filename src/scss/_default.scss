@@ -41,7 +41,8 @@ body {
     font-weight: normal;
     font-style: normal;
     letter-spacing: normal;
-    color: var(--color-font-primary);
+    // color: var(--color-white);
+    // background-color: var(--color-font-primary);
 
     &.modal-open {
         overflow: hidden;
@@ -82,4 +83,50 @@ ul {
 .d-flex {
     display: flex;
     align-items: center;
+}
+
+/* Кнопки */
+.default-btn {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    // gap: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 80%;
+    color: var(--color-black);
+    background-color: var(--color-white);
+    padding: 9px 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid var(--color-black);
+    text-align: left;
+}
+
+.btn--white {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    // padding: 10px 10px;
+}
+
+/* Баджы */
+.badge {
+    display: inline-block;
+    text-transform: uppercase;
+    width: 62px;
+    padding: 5px 10px;
+    position: absolute;
+    left: 40px;
+}
+
+.badge--black {
+    background-color: var(--color-black);
+    color: var(--color-white);
+
+}
+
+.badge--red {
+    background-color: var(--color-red);
+    color: var(--color-white);
 }

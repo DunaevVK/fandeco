@@ -1,0 +1,37 @@
+@import '../../scss/sass-variables';
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -6px;
+    margin-left: 355px;
+
+    @media (max-width: 768px) {
+        margin-left: 0;
+    }
+}
+
+.pagination-main-btn {
+    display: inline-block;
+    width: 460px;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.pagination-btns {
+    display: flex;
+    gap: 20px;
+
+}
+
+.pagination-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-grey);
+    cursor: pointer;
+}
