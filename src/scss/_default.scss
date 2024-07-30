@@ -170,3 +170,52 @@ img {
     background-color: var(--color-red);
     color: var(--color-white);
 }
+
+
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background: lightblue;
+}
+
+.sidebar {
+    display: none;
+    flex-shrink: 0;
+    width: calc(calc((100% - 20px) * 0.25));
+    background: lightcoral;
+
+    @media (min-width: $lg) {
+        display: block;
+    }
+}
+
+.cards_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    background: lightgreen;
+
+    @media (min-width: $md) {
+        gap: 20px;
+    }
+}
+
+.cards_item {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: lightsalmon;
+
+    @media (min-width: $sm) {
+        width: calc((100% - 10px) / 2);
+    }
+
+    @media (min-width: $md) {
+        width: calc((100% - 20px * 2) / 3);
+    }
+}
