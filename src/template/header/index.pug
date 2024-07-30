@@ -1,18 +1,20 @@
-.container.header__container
-	.header-info.d-flex
+.container
+	.header-info
 		a(href="#!").header-info__logo
-			img(src="../../img/LightOpt.png", alt="LightOpt")
+			img(src="img/LightOpt.png", alt="LightOpt")
 		.header-info__search
 			input(type="text" placeholder="Поиск по каталогу").header-info__input-text
 			button.header-info__btn.header-info__menu-search.btn-reset 
-		ul.header-info__menu.d-flex
+		ul.header-info__menu
 			li.header-info__menu-item
 				button.header-info__btn.btn-reset.header-info__menu--acc
 			li.header-info__menu-item
 				button.header-info__btn.btn-reset.header-info__menu--favorites
 			li.header-info__menu-item
+				button.header-info__btn.btn-reset.header-info__menu--burger
+			li.header-info__menu-item
 				button.header-info__btn.btn-reset.header-info__menu--order
-	nav.header__nav.nav__container
+	nav.nav
 		ul.nav__list
 			li.nav__item
 				a.nav__link(href="#!") каталог

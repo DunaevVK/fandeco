@@ -37,7 +37,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-family: 'GothamPro';
-    // font-size: 17px;
+    font-size: 17px;
     font-weight: normal;
     font-style: normal;
     letter-spacing: normal;
@@ -68,6 +68,23 @@ ul {
     padding: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 3;
+        background-color: #fff;
+    }
+}
+
 .btn-reset {
     border: none;
     background: transparent;
@@ -75,15 +92,38 @@ ul {
 }
 
 .container {
-    max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
-    padding: 22px;
+    padding: 0px 10px;
+
+    @media (min-width: $sm) {
+        max-width: 540px;
+    }
+
+    @media (min-width: $md) {
+        max-width: 720px;
+        padding: 0px 20px;
+    }
+
+    @media (min-width: $lg) {
+        max-width: 960px;
+    }
+
+    @media (min-width: $xl) {
+        max-width: 1140px;
+    }
+
+    @media (min-width: $xxl) {
+        max-width: 1440px;
+
+    }
 }
 
-.d-flex {
-    display: flex;
-    align-items: center;
-}
+
+// .d-flex {
+//     display: flex;
+//     align-items: center;
+// }
 
 /* Кнопки */
 .default-btn {

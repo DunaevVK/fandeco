@@ -23,6 +23,13 @@
         padding: 15px 92px;
         text-align: center;
         text-transform: uppercase;
+
+        @media (max-width: 768px) {
+            width: 80%;
+            font-size: 12px;
+            text-align: center;
+            padding: 15px 80px;
+        }
     }
 
     @media (max-width: 1200px) {

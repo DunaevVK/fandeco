@@ -38,14 +38,14 @@ html(lang="ru")
         main.main#main
             include breadcrumbs/index
             include main-title/index
-            include catalog/index
-            include pagination/index
-            include last-products/index
+            //- include catalog/index
+            //- include pagination/index
+            //- include last-products/index
 
         footer.footer#footer
-            include footer/index
+            //- include footer/index
 
-        include ../components/spinner/spinner.pug
+        //- include ../components/spinner/spinner.pug
 
         if process.env.NODE_ENV === 'dev'
             script(src="js/vendor.js")
