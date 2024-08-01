@@ -1,15 +1,20 @@
 @import '../../scss/sass-variables';
 
 .catalog {
-    margin-top: 30px;
+    margin-top: 20px;
+
+    @media (min-width: $xl) {
+        margin-top: 44px;
+    }
 }
 
 .catalog-content {
-
     display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
 
-    // gap: 20px;
-    @media (max-width: 1200px) {
-        flex-direction: column;
+    @media (min-width: $xl) {
+        flex-direction: row;
     }
 }

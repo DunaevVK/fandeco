@@ -1,19 +1,19 @@
-.catalog-sort
+//- .catalog-sort
     //- .sort__icon_hidden
     //-     img(src="img/sort-icon.svg")
-    .sort
-        .sort__title Сортировка
-        .sort__select-wrap
-            .sort__icon
-                img(src="img/sort-icon.svg")
-            select.sort__select
-                option(value="sort") Дешевле 
-                option(value="sort") Сортировка
-            .sort__open
-                img(src="img/open_select.svg") 
-        span.sort__quantity-text Количество
-        input(type="number" placeholder="122").sort__quantity
-    .sort-tags
+    //- .sort
+    //-     .sort__title Сортировка
+    //-     .sort__select-wrap
+    //-         .sort__icon
+    //-             img(src="img/sort-icon.svg")
+    //-         select.sort__select
+    //-             option(value="sort") Дешевле 
+    //-             option(value="sort") Сортировка
+    //-         .sort__open
+    //-             img(src="img/open_select.svg") 
+    //-     span.sort__quantity-text Количество
+    //-     input(type="number" placeholder="122").sort__quantity
+    //- .sort-tags
         button.default-btn.btn--white Бронза
             img(src="img/close.svg")
         button.default-btn.btn--white Новинки
@@ -26,124 +26,106 @@
             img(src="img/close.svg")
         button.default-btn.btn--white Дизайнерский
             img(src="img/close.svg")
-    ul.catalog-grid__list
-        li.catalog-grid__item
-            article.product 
-                .product__image 
-                    img(src="img/luster-1.png")
+ul.catalog-grid__list
+    li.catalog-grid__item
+        article.product 
+            .product__image 
+                img(src="img/luster-1.png")
+                .product__image-button
+                    ul.header-info__menu
+                        li.header-info__menu-item
+                            button.header-info__btn.btn-reset.header-info__menu--favorites
+                        li.header-info__menu-item.product--item
+                            button.header-info__btn.btn-reset.header-info__menu--order
+            .product__info-wrap
                 .product__info
                     h3.product__title Люстра Аrte Lamp Rosaria
                     h4.product__subtitle A8564PL-5RB
                 .product__info-price 
-                    .product__price 88 000 ₽
                     .product__quantity В наличии: 110 шт.
-        li.catalog-grid__item
-            article.product 
-                .product__image 
-                    img(src="img/luster-2.png")
+                    .product__price 88 000 ₽
+    li.catalog-grid__item
+        article.product 
+            .product__image 
+                img(src="img/luster-1.png")
+                .product__image-button
+                    ul.header-info__menu
+                        li.header-info__menu-item
+                            button.header-info__btn.btn-reset.header-info__menu--favorites
+                        li.header-info__menu-item.product--item
+                            button.header-info__btn.btn-reset.header-info__menu--order
+            .product__info-wrap
                 .product__info
                     h3.product__title Люстра Аrte Lamp Rosaria
                     h4.product__subtitle A8564PL-5RB
                 .product__info-price 
-                    .product__price 88 000 ₽
                     .product__quantity В наличии: 110 шт.
-        li.catalog-grid__item
-            article.product 
-                .product__image 
-                    img(src="img/luster-3.png")
+                    .product__price 88 000 ₽
+    li.catalog-grid__item
+        article.product 
+            .product__image 
+                img(src="img/luster-1.png")
+                .product__image-button
+                    ul.header-info__menu
+                        li.header-info__menu-item
+                            button.header-info__btn.btn-reset.header-info__menu--favorites
+                        li.header-info__menu-item.product--item
+                            button.header-info__btn.btn-reset.header-info__menu--order
+            .product__info-wrap
                 .product__info
                     h3.product__title Люстра Аrte Lamp Rosaria
                     h4.product__subtitle A8564PL-5RB
                 .product__info-price 
-                    .product__price 88 000 ₽
                     .product__quantity В наличии: 110 шт.
-        li.catalog-grid__item
-            article.product 
-                .product__image 
-                    img(src="img/luster-1.png")
+                    .product__price 88 000 ₽
+    li.catalog-grid__item
+        article.product 
+            .product__image 
+                img(src="img/luster-1.png")
+                .product__image-button
+                    ul.header-info__menu
+                        li.header-info__menu-item
+                            button.header-info__btn.btn-reset.header-info__menu--favorites
+                        li.header-info__menu-item.product--item
+                            button.header-info__btn.btn-reset.header-info__menu--order
+            .product__info-wrap
                 .product__info
                     h3.product__title Люстра Аrte Lamp Rosaria
                     h4.product__subtitle A8564PL-5RB
                 .product__info-price 
-                    .product__price 88 000 ₽
                     .product__quantity В наличии: 110 шт.
-        li.catalog-grid__item
-            article.product 
-                .product__image 
-                    img(src="img/luster-2.png")
+                    .product__price 88 000 ₽
+    li.catalog-grid__item
+        article.product 
+            .product__image 
+                img(src="img/luster-1.png")
+                .product__image-button
+                    ul.header-info__menu
+                        li.header-info__menu-item
+                            button.header-info__btn.btn-reset.header-info__menu--favorites
+                        li.header-info__menu-item.product--item
+                            button.header-info__btn.btn-reset.header-info__menu--order
+            .product__info-wrap
                 .product__info
                     h3.product__title Люстра Аrte Lamp Rosaria
                     h4.product__subtitle A8564PL-5RB
                 .product__info-price 
-                    .product__price 88 000 ₽
                     .product__quantity В наличии: 110 шт.
-        li.catalog-grid__item
-            article.product 
-                .product__image 
-                    img(src="img/luster-3.png")
+                    .product__price 88 000 ₽
+    li.catalog-grid__item
+        article.product 
+            .product__image 
+                img(src="img/luster-1.png")
+                .product__image-button
+                    ul.header-info__menu
+                        li.header-info__menu-item
+                            button.header-info__btn.btn-reset.header-info__menu--favorites
+                        li.header-info__menu-item.product--item
+                            button.header-info__btn.btn-reset.header-info__menu--order
+            .product__info-wrap
                 .product__info
                     h3.product__title Люстра Аrte Lamp Rosaria
                     h4.product__subtitle A8564PL-5RB
                 .product__info-price 
-                    .product__price 88 000 ₽
                     .product__quantity В наличии: 110 шт.
-        li.catalog-grid__item
-            article.product 
-                .product__image 
-                    img(src="img/luster-1.png")
-                .product__info
-                    h3.product__title Люстра Аrte Lamp Rosaria
-                    h4.product__subtitle A8564PL-5RB
-                .product__info-price 
                     .product__price 88 000 ₽
-                    .product__quantity В наличии: 110 шт.
-        li.catalog-grid__item
-            article.product 
-                .product__image 
-                    img(src="img/luster-2.png")
-                .product__info
-                    h3.product__title Люстра Аrte Lamp Rosaria
-                    h4.product__subtitle A8564PL-5RB
-                .product__info-price 
-                    .product__price 88 000 ₽
-                    .product__quantity В наличии: 110 шт.
-        li.catalog-grid__item
-            article.product 
-                .product__image 
-                    img(src="img/luster-3.png")
-                .product__info
-                    h3.product__title Люстра Аrte Lamp Rosaria
-                    h4.product__subtitle A8564PL-5RB
-                .product__info-price 
-                    .product__price 88 000 ₽
-                    .product__quantity В наличии: 110 шт.
-        li.catalog-grid__item
-            article.product 
-                .product__image 
-                    img(src="img/luster-1.png")
-                .product__info
-                    h3.product__title Люстра Аrte Lamp Rosaria
-                    h4.product__subtitle A8564PL-5RB
-                .product__info-price 
-                    .product__price 88 000 ₽
-                    .product__quantity В наличии: 110 шт.
-        li.catalog-grid__item
-            article.product 
-                .product__image 
-                    img(src="img/luster-2.png")
-                .product__info
-                    h3.product__title Люстра Аrte Lamp Rosaria
-                    h4.product__subtitle A8564PL-5RB
-                .product__info-price 
-                    .product__price 88 000 ₽
-                    .product__quantity В наличии: 110 шт.
-        li.catalog-grid__item
-            article.product 
-                .product__image 
-                    img(src="img/luster-3.png")
-                .product__info
-                    h3.product__title Люстра Аrte Lamp Rosaria
-                    h4.product__subtitle A8564PL-5RB
-                .product__info-price 
-                    .product__price 88 000 ₽
-                    .product__quantity В наличии: 110 шт.

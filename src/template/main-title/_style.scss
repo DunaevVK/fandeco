@@ -4,9 +4,22 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: var(--color-grey);
+    position: relative;
     padding-top: 10px;
     padding-bottom: 10px;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 50%;
+        width: 100vw;
+        height: 100%;
+        background-color: var(--color-grey);
+        transform: translateX(-50%);
+    }
 
     @media (min-width: $lg) {
         flex-direction: row;
@@ -14,6 +27,8 @@
         column-gap: 40px;
         padding: 29px 20px;
     }
+
+
 }
 
 .main-title__title {
@@ -21,6 +36,8 @@
     font-size: 20px;
     line-height: 19px;
     font-weight: 400;
+
+
 
     @media (min-width: $lg) {
         font-size: 38px;
