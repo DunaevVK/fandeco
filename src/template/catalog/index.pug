@@ -1,5 +1,33 @@
 section.catalog
     .container
+        .catalog-sort
+            .sort
+                .sort__select
+                    .sort__select-title Сортировка
+                    .sort__select-wrap
+                        .sort__select-icon
+                            //- img(src="img/sort-icon.svg")
+                        select.sort__select-select
+                            option(value="sort") Дешевле 
+                            option(value="sort") Сортировка
+                        .sort__select-open
+                            //- img(src="img/open_select.svg") 
+                .sort__quantity
+                    span.sort__quantity-text Количество
+                    input(placeholder="122").sort__quantity-value
+            .sort-tags
+                button.default-btn.btn--white.sort-tags__btn Бронза
+                    .sort-tags__btn--close
+                button.default-btn.btn--white.sort-tags__btn Новинки
+                    .sort-tags__btn--close
+                button.default-btn.btn--white.sort-tags__btn Акрил
+                    .sort-tags__btn--close
+                button.default-btn.btn--white.sort-tags__btn Стекло
+                    .sort-tags__btn--close
+                button.default-btn.btn--white.sort-tags__btn Американская классика
+                    .sort-tags__btn--close
+                button.default-btn.btn--white.sort-tags__btn Дизайнерский
+                    .sort-tags__btn--close
         .catalog-content
             include ../catalog-filters/index
             include ../catalog-grid/index
