@@ -1,0 +1,10 @@
+mixin breadcrumbs(links)
+    section.breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                each link, index in links
+                    li.breadcrumbs__item
+                        if index === links.length - 1
+                            span= link
+                        else
+                            a(href='#!')= link

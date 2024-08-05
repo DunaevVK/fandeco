@@ -1,6 +1,8 @@
 //- Include used template for this page
 extends ../../template/template
 
+include ../../components/breadcrumbs/mixin.pug
+
 //- Variables for include this in used template
 block variables
     - let title       = 'LightOPT'
@@ -8,9 +10,8 @@ block variables
     - let keywords    = 'Write keywords for this page here'
     - let page        = 'index'
 
-    //- block breadcrumbs
-    //- .section
-    //-     span Хлебные крошки
+block breadcrumbs
+    +breadcrumbs(["Главная", "Продукция", "Внутреннее освещение", "Люстры", "Потолочная люстра Тet-A-Tet A1704LM-5CC"])
 
 //- block content
     //- h1 Главная

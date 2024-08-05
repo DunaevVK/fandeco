@@ -39,26 +39,34 @@
             column-gap: 20px;
         }
 
-        &:not(:last-of-type)::after {
-            content: "/";
-            position: relative;
-            font-size: 15px;
+        &:has(a) {
+            &::after {
+                content: "/";
+                position: relative;
+                font-size: 15px;
+            }
         }
 
-        .breadcrumbs__link--active {
-            text-align: center;
+        a,
+        span {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+            color: var(--color-black);
+            transition: color .1s linear;
+
+            @media (min-width: $sm) {
+                font-size: 17px;
+                line-height: 22px;
+            }
         }
-    }
 
-    &__link {
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 20px;
-        color: var(--color-black);
-
-        @media (min-width: $sm) {
-            font-size: 17px;
-            line-height: 22px;
+        a {
+            @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    color: var(--color-grey-sec)
+                }
+            }
         }
     }
 }
