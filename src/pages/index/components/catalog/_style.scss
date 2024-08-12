@@ -1,4 +1,4 @@
-@import '../../scss/sass-variables';
+@import '../../../../scss/sass-variables';
 
 .catalog {
     margin-top: 20px;
@@ -104,7 +104,7 @@
                 min-width: 40px;
 
                 @media (min-width: $md) {
-                    min-width: 332px;
+                    min-width: 335px;
                 }
             }
 

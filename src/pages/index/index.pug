@@ -10,13 +10,19 @@ block variables
     - let keywords    = 'Write keywords for this page here'
     - let page        = 'index'
 
+    //- main.main#main
+    //- block breadcrumbs
+    //-     +breadcrumbs(["Главная", "Продукция", "Внутреннее освещение", "Люстры", "Потолочная люстра Тet-A-Tet A1704LM-5CC"])
+    
+    //- include ../../components/main-title/index
+    //- block content
 block breadcrumbs
     +breadcrumbs(["Главная", "Продукция", "Внутреннее освещение", "Люстры", "Потолочная люстра Тet-A-Tet A1704LM-5CC"])
-
-//- block content
+block content
+    include components/catalog/index
     //- h1 Главная
-    br
+        br
     //- strong(style="color: red") Pug переменная page должна иметь тоже имя как и директория страницы
-    br
-    br
-    include components/about/about
+        br
+        br
+    //- include components/about/about

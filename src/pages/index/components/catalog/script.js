@@ -6,13 +6,12 @@ window.addEventListener('load', () => {
 
     // Добавляем сюда все скрипты для Catalog
     const customSelect = document.querySelectorAll('.custom-select')
+    console.log(customSelect);
+
     const customSelectIcon = document.querySelectorAll('.sort__select-icon')
     customSelect.forEach(el => {
         el.addEventListener('click', (e) => {
             e.currentTarget.classList.toggle('custom-select--open')
-            // console.dir(e.target.parentElement);
-            // console.log(e.target.classList)
-            // console.log(e.target);
 
             if (e.target.classList.contains('custom-select__option')) {
                 // console.log(e.currentTarget);

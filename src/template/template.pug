@@ -34,12 +34,11 @@ html(lang="ru")
 
         header.header#header
             include header/index
-
-        block breadcrumbs
-
         main.main#main
+            block breadcrumbs
             include main-title/index
-            include catalog/index
+            block content
+            //- include catalog/index
             //- include pagination/index
             //- include last-products/index
 
@@ -57,7 +56,7 @@ html(lang="ru")
                         .cards_item Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur exercitationem fugiat enim inventore nulla, minima, corrupti ipsum quis consectetur temporibus quo distinctio nobis voluptatum sunt. Dolores odio quis nesciunt a.
 
         footer.footer#footer
-            //- include footer/index
+            include footer/index
 
         //- include ../components/spinner/spinner.pug
 

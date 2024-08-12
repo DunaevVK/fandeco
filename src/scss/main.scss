@@ -8,10 +8,10 @@
 @import '../template/header/style';
 @import '../template/footer/style';
 @import '../template/main-title/style';
-@import '../template/catalog/style';
-@import '../template/catalog-filters/style';
-@import '../template/catalog-grid/style';
-@import '../template/pagination/style';
+@import '../pages/index/components/catalog/style';
+@import '../pages/index/components/catalog-filters/style';
+@import '../pages/index/components/catalog-grid/style';
+@import '../pages/index/components/pagination/style';
 @import '../template/last-products/style';
 @import '../components/spinner/style';
 @import '../components/breadcrumbs/style';
