@@ -4,7 +4,7 @@ const initLastProductsScripts = () => {
 
 window.addEventListener('load', () => {
 
-    // Добавляем сюда все скрипты для Breadcrumbs
+    // Добавляем сюда все скрипты для Last Products
 
     initLastProductsScripts()
 })
