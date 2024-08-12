@@ -39,17 +39,29 @@
             column-gap: 20px;
         }
 
-        &:not(:last-of-type)::after {
-            content: "/";
-            position: relative;
-            font-size: 15px;
+        &:has(a) {
+            &::after {
+                content: "/";
+                position: relative;
+                font-size: 15px;
+            }
         }
 
-        .breadcrumbs__link--active {
-            text-align: center;
-        }
-    }
+        a,
+        span {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 20px;
+            color: var(--color-black);
+            transition: color .1s linear;
 
+            @media (min-width: $sm) {
+                font-size: 17px;
+                line-height: 22px;
+            }
+        }
+
+<<<<<<< HEAD:src/template/breadcrumbs/_style.scss
     &__link {
         font-size: 14px;
         font-weight: 300;
@@ -64,6 +76,14 @@
         @media (min-width: $sm) {
             font-size: 17px;
             line-height: 22px;
+=======
+        a {
+            @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    color: var(--color-grey-sec)
+                }
+            }
+>>>>>>> 25ebcba0771904cffc9d0ad1300d53d6c5079a0c:src/components/breadcrumbs/_style.scss
         }
     }
 }
