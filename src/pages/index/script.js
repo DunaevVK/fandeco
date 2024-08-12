@@ -1,10 +1,2 @@
-const someScriptsForCurrentPage = () => {
-    console.log('Здесь можно добавить какие-либо скрипты для текущей страницы');
-}
-
-window.addEventListener('load', () => {
-
-    // Здесь вызываем все скрипты для текущей страницы
-
-    someScriptsForCurrentPage()
-})
+//=require components/catalog/catalog.js
+//=require components/catalog-filters/catalog-filters.js

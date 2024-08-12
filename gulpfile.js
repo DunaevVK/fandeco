@@ -112,6 +112,7 @@ const devVendorJs = () => src("./src/vendor/js/**/*.js")
 const devCommonJs = () => src([
 	"./src/js/utils/**/*.js",
 	"./src/components/**/*.js",
+	// "./src/pages/index/components/**/*.js",
 	"./src/template/**/*.js",
 	"./src/js/main.js",
 	"./src/js/**/*.js"
