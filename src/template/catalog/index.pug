@@ -2,19 +2,48 @@ section.catalog
     .container
         .catalog-sort
             .sort
+                button.btn--white.btn-reset.catalog-filters__btn.sort__filter-btn Фильтры
                 .sort__select
                     .sort__select-title Сортировка
                     .sort__select-wrap
-                        .sort__select-icon
-                            //- img(src="img/sort-icon.svg")
-                        select.sort__select-select
-                            option(value="sort") Дешевле 
-                            option(value="sort") Сортировка
-                        .sort__select-open
+                        .custom-select
+                            .custom-select__top.sort__select-top
+                                .sort__select-icon
+                                //- .custom__select-value.custom__select-value--sort Дешевле
+                                .custom-select__value.custom-select__value--sort Дешевле
+                                .sort__select-open
+                            .custom-select__drop
+                                ul.custom-select__list 
+                                    li.custom-select__item.custom-select__item--sort
+                                        .sort__select-icon
+                                        .custom-select__option.custom-select__option--sort По умолчанию
+                                    li.custom-select__item.custom-select__item--sort
+                                        .sort__select-icon
+                                        .custom-select__option.custom-select__option--sort Дешевле
+                                    li.custom-select__item.custom-select__item--sort
+                                        .sort__select-icon.sort__select-icon--expensive
+                                        .custom-select__option.custom-select__option--sort Дороже
+                                    li.custom-select__item.custom-select__item--sort
+                                        .sort__select-icon.sort__select-icon--name
+                                        .custom-select__option.custom-select__option--sort По наименованию
+                        //- .sort__select-open
                             //- img(src="img/open_select.svg") 
                 .sort__quantity
                     span.sort__quantity-text Количество
-                    input(placeholder="122").sort__quantity-value
+                    //- input(placeholder="122").sort__quantity-value
+                    .custom-select
+                        .custom-select__top.sort__quantity-top
+                                .custom-select__value 12
+                        .custom-select__drop.custom-select__drop--quantity
+                            ul.custom-select__list 
+                                li.custom-select__item
+                                    .custom-select__option 12
+                                li.custom-select__item
+                                    .custom-select__option 24
+                                li.custom-select__item
+                                    .custom-select__option 48
+                                li.custom-select__item
+                                    .custom-select__option 96
             .sort-tags
                 button.default-btn.btn--white.sort-tags__btn Бронза
                     .sort-tags__btn--close

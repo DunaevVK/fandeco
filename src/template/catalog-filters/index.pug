@@ -1,11 +1,11 @@
 .catalog-filters
-    .catalog-filters--mobile
-        button.btn--white.btn-reset.sort__icon_hidden
-        button.btn--white.btn-reset.catalog-filters__btn Фильтры
+    //- .catalog-filters--mobile
+    //-     //- button.btn--white.btn-reset.sort__icon_hidden
+    //-     button.btn--white.btn-reset.catalog-filters__btn Фильтры
     .catalog-filter
         .catalog-filter__top
             h3.catalog-filter__title тип светильников
-            span.catalog-filter__toogle +
+            .catalog-filter__toggle
         .catalog-filter__bottom
             ul.catalog-filter__list
                 li.catalog-filter__item
@@ -46,19 +46,19 @@
     .catalog-filter.catalog-filter--open    
         .catalog-filter__top
             h3.catalog-filter__title.catalog-filter__title--active цена
-            span.catalog-filter__toogle —
+            .catalog-filter__toggle
         .catalog-filter__bottom
             ul.catalog-filter__list
                 li.catalog-filter__item
                     label.custom-checkbox
                         input.custom-checkbox__input(type="checkbox")
-                        span.badge.badge--black new
+                        .badge.badge--black new
                         span.custom-checkbox__text Новый
                         span.custom-checkbox__quantity 22
                 li.catalog-filter__item
                     label.custom-checkbox
                         input.custom-checkbox__input(type="checkbox")
-                        span.badge.badge--red sale
+                        .badge.badge--red sale
                         span.custom-checkbox__text Распродажа
                         span.custom-checkbox__quantity 30
                 li.catalog-filter__item
@@ -89,7 +89,7 @@
     .catalog-filter    
         .catalog-filter__top
             h3.catalog-filter__title Тип лампы
-            span.catalog-filter__toogle +
+            .catalog-filter__toggle
         .catalog-filter__bottom
             ul.catalog-filter__list
                 li.catalog-filter__item
@@ -130,7 +130,7 @@
     .catalog-filter    
         .catalog-filter__top
             h3.catalog-filter__title Стиль светильника
-            span.catalog-filter__toogle +
+            .catalog-filter__toggle
         .catalog-filter__bottom
             ul.catalog-filter__list
                 li.catalog-filter__item
@@ -171,7 +171,7 @@
     .catalog-filter  
         .catalog-filter__top
             h3.catalog-filter__title место применения
-            span.catalog-filter__toogle +
+            .catalog-filter__toggle
         .catalog-filter__bottom
             ul.catalog-filter__list
                 li.catalog-filter__item
@@ -212,7 +212,7 @@
     .catalog-filter    
         .catalog-filter__top
             h3.catalog-filter__title пл. освещения, м2
-            span.catalog-filter__toogle +
+            .catalog-filter__toggle
         .catalog-filter__bottom
             ul.catalog-filter__list
                 li.catalog-filter__item
@@ -253,7 +253,7 @@
     .catalog-filter    
         .catalog-filter__top
             h3.catalog-filter__title Тип цоколя
-            span.catalog-filter__toogle +
+            .catalog-filter__toggle
         .catalog-filter__bottom
             ul.catalog-filter__list
                 li.catalog-filter__item
@@ -294,7 +294,7 @@
     .catalog-filter    
         .catalog-filter__top
             h3.catalog-filter__title цветовая температура
-            span.catalog-filter__toogle +
+            .catalog-filter__toggle
         .catalog-filter__bottom
             ul.catalog-filter__list
                 li.catalog-filter__item
@@ -335,7 +335,7 @@
     .catalog-filter    
         .catalog-filter__top
             h3.catalog-filter__title IP
-            span.catalog-filter__toogle +
+            .catalog-filter__toggle
         .catalog-filter__bottom
             ul.catalog-filter__list
                 li.catalog-filter__item
@@ -376,7 +376,7 @@
     .catalog-filter    
         .catalog-filter__top
             h3.catalog-filter__title цвет арматуры
-            span.catalog-filter__toogle +
+            .catalog-filter__toggle
         .catalog-filter__bottom
             ul.catalog-filter__list
                 li.catalog-filter__item
@@ -417,7 +417,7 @@
     .catalog-filter    
         .catalog-filter__top
             h3.catalog-filter__title материал арматуры
-            span.catalog-filter__toogle +
+            .catalog-filter__toggle
         .catalog-filter__bottom
             ul.catalog-filter__list
                 li.catalog-filter__item
@@ -458,7 +458,7 @@
     .catalog-filter    
         .catalog-filter__top
             h3.catalog-filter__title цвета
-            span.catalog-filter__toogle +
+            .catalog-filter__toggle
         .catalog-filter__bottom
             ul.catalog-filter__list
                 li.catalog-filter__item
@@ -499,7 +499,7 @@
     .catalog-filter    
         .catalog-filter__top
             h3.catalog-filter__title коллекция
-            span.catalog-filter__toogle +
+            .catalog-filter__toggle
         .catalog-filter__bottom
             ul.catalog-filter__list
                 li.catalog-filter__item
@@ -539,8 +539,8 @@
                         span.custom-checkbox__quantity 5
     .catalog-filter    
         .catalog-filter__top
-            h3.catalog-filter__title материал плафона/декор
-            span.catalog-filter__toogle +
+            h3.catalog-filter__title материал плафона/декора
+            .catalog-filter__toggle
         .catalog-filter__bottom
             ul.catalog-filter__list
                 li.catalog-filter__item
@@ -581,7 +581,7 @@
     .catalog-filter    
         .catalog-filter__top
             h3.catalog-filter__title длина светильника, см
-            span.catalog-filter__toogle +
+            .catalog-filter__toggle
         .catalog-filter__bottom
             ul.catalog-filter__list
                 li.catalog-filter__item
@@ -622,7 +622,7 @@
     .catalog-filter    
         .catalog-filter__top
             h3.catalog-filter__title высота светильника, см
-            span.catalog-filter__toogle +
+            .catalog-filter__toggle
         .catalog-filter__bottom
             ul.catalog-filter__list
                 li.catalog-filter__item
@@ -663,7 +663,7 @@
     .catalog-filter    
         .catalog-filter__top
             h3.catalog-filter__title ширина светильника, см
-            span.catalog-filter__toogle +
+            .catalog-filter__toggle
         .catalog-filter__bottom
             ul.catalog-filter__list
                 li.catalog-filter__item

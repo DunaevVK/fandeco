@@ -55,6 +55,11 @@
         font-weight: 300;
         line-height: 20px;
         color: var(--color-black);
+        transition: all 0.3s;
+
+        &:hover {
+            box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.75);
+        }
 
         @media (min-width: $sm) {
             font-size: 17px;
