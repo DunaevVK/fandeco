@@ -246,26 +246,31 @@ const buildHtml = () => src("./src/pages/**/index.pug")
 // Common task functions
 const clean = () => del("./build")
 
+
+// Watchers
+function startWatch() {
+	watch("./src/vendor/scss/**/*.scss", devVendorCss)
+	watch("./src/scss/**/*.scss", devCommonCss)
+	watch("./src/template/**/*.scss", devCommonCss)
+	watch("./src/components/**/*.scss", devCommonCss)
+	watch("./src/pages/**/*.scss", devCustomCss)
+	watch("./src/vendor/js/**/*.js", devVendorJs)
+	watch("./src/js/**/*.js", devCommonJs)
+	watch("./src/template/**/*.js", devCommonJs)
+	watch("./src/components/**/*.js", devCommonJs)
+	watch("./src/pages/**/*.js", devCustomJs)
+	watch("./src/**/*.pug", devHtml)
+}
+
 const server = () => {
-	browserSync.init({
-		server: {
-			baseDir: './build'
-		}
+	startWatch()
+
+	return browserSync.init({
+		server: {baseDir: "./build"},
+		port: 7001
 	})
 }
 
-// Watchers
-watch("./src/vendor/scss/**/*.scss", devVendorCss)
-watch("./src/scss/**/*.scss", devCommonCss)
-watch("./src/template/**/*.scss", devCommonCss)
-watch("./src/components/**/*.scss", devCommonCss)
-watch("./src/pages/**/*.scss", devCustomCss)
-watch("./src/vendor/js/**/*.js", devVendorJs)
-watch("./src/js/**/*.js", devCommonJs)
-watch("./src/template/**/*.js", devCommonJs)
-watch("./src/components/**/*.js", devCommonJs)
-watch("./src/pages/**/*.js", devCustomJs)
-watch("./src/**/*.pug", devHtml)
 
 exports.fonts = fonts;
 
