@@ -1,0 +1,16 @@
+@import '../../../../scss/sass-variables';
+
+.card {
+    margin-top: 20px;
+
+    @media (min-width: $xl) {
+        margin-top: 34px;
+    }
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 40px;
+}

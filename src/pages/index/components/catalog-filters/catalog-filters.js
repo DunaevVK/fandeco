@@ -1,14 +1,9 @@
 const initCatalogFiltersScripts = () => {
-    console.log('Здесь можно добавить JS для Catalog-filters');
-}
-
-window.addEventListener('load', () => {
-
-    // Добавляем сюда все скрипты для Catalog-filters
+    // console.log('Здесь можно добавить JS для Catalog-filters');
     const customCheckbox = document.querySelectorAll('.custom-checkbox');
     const catalogFilterTop = document.querySelectorAll('.catalog-filter__top');
     const catalogFilter = document.querySelectorAll('.catalog-filter');
-    const catalogFilterBtn = document.querySelector('.catalog-filters__btn').addEventListener('click', () => {
+    document.querySelector('.catalog-filters__btn').addEventListener('click', () => {
         catalogFilter.forEach(el => {
             el.closest('.catalog-filter').classList.toggle('catalog-filter--show')
 
@@ -28,5 +23,8 @@ window.addEventListener('load', () => {
         })
 
     })
+}
+
+window.addEventListener('load', () => {
     initCatalogFiltersScripts()
 })
