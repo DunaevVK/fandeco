@@ -137,13 +137,22 @@ img {
     outline: none;
     cursor: pointer;
     border: 1px solid var(--color-black);
+
     // text-align: left;
+    &:hover {
+        // filter: brightness(0.8);
+        opacity: 0.7;
+    }
 }
 
 .btn--white {
     color: var(--color-black);
     background-color: var(--color-white);
+
     // padding: 10px 10px;
+    &:hover {
+        background-color: var(--color-grey-sec);
+    }
 }
 
 /* Баджы */

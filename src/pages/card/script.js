@@ -1,2 +1,2 @@
-//=require components/catalog/catalog.js
-//=require components/catalog-filters/catalog-filters.js
+//=require components/card-content__top/card-content__top.js
+//=require components/card-content__bottom/card-content__bottom.js

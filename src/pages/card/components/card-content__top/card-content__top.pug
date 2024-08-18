@@ -2,16 +2,16 @@
     .card-top__left
         .card-slider 
             .card-slider__images 
-                .card-slider__image
+                .card-slider__image.card-slider__image_active
                     img(src="img/slider-1.jpg")
                 .card-slider__image
                     img(src="img/slider-2.jpg")
                 .card-slider__image
                     img(src="img/slider-1.jpg")
             .card-slider__main
-                .slider-wrapper 
-                    .slider-slide 
-                        img(src="img/slider-1.jpg")
+                //- .slider-wrapper 
+                //- .slider-slide 
+                img(src="img/slider-1.jpg")
     .card-top__right
         .card-top__info
             .card-top__btns
@@ -28,7 +28,10 @@
                     .card-top__price_title Ваша цена:
                     .card-top__price_value 6 780 ₽
         .card-top__quantity 
-            .card-top__quantity_change 200 
+            .card-top__quantity_changer
+                button.btn-reset.btn--white.changer__btn.changer__btn_minus —
+                input(type="text", maxlength="3", value="200").changer__input
+                button.btn-reset.btn--white.changer__btn.changer__btn_plus +
             .card-top__quantity_value 
                 span 234 шт в наличии
              
@@ -49,11 +52,12 @@
                             .custom-select__option.custom-select__option--sort Заказ № 54325678
             button.btn-reset.default-btn.card-top__btn_order Добавить в заказ
         .card-top__additional-info
-            .card-top__doc-wrap
-                button.btn-reset.card-top__doc
+            .card-top__additional-info_wrap
+                button.btn-reset.card-top__icon.card-top__doc
                 .card-top__doc_title Документация
-            .card-top__cert-wrap
-                button.btn-reset.card-top__cert
+            .card-top__additional-info_wrap
+                .card-top__icon
+                    button.btn-reset.card-top__icon.card-top__rar
                 .card-top__cert_title Упаковка товара
           
 

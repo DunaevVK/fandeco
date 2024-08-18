@@ -3,187 +3,817 @@
         //- .catalog-filters--mobile
         //-     //- button.btn--white.btn-reset.sort__icon_hidden
         //-     button.btn--white.btn-reset.catalog-filters__btn Фильтры
-        .card-filter.card-filter--open
+        .card-filter
             .card-filter__top
                 .card-filter__toggle
-                h3.card-filter__title.card-filter__title--active характеристики
+                h3.card-filter__title характеристики
                 
             .card-filter__bottom
-                .card-filter__top.card-filter__top--open
-                    .card-filter__toggle
-                    h3.card-filter__title.card-filter__title--active основные
+                .card-filter__top_sub
+                    .card-filter__toggle_in
+                    h3.card-filter__title основные
                 ul.card-filter__list
                     li.card-filter__item
-                        span.card-filter__text Артикул
+                        .card-filter__text_wrap
+                            span.card-filter__text Артикул
                         span.card-filter__text_value A8889LM-8GY
                     li.card-filter__item
-                        span.card-filter__text Интерьер
+                        .card-filter__text_wrap
+                            span.card-filter__text Интерьер
                         span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
                     li.card-filter__item
-                        span.card-filter__text Бренд
+                        .card-filter__text_wrap
+                            span.card-filter__text Бренд
                         span.card-filter__text_value Arte Lamp
                     li.card-filter__item
-                        span.card-filter__text Мощность
-                        span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
-                    li.card-filter__item
-                        span.card-filter__text Страна изготовитель
-                        span.card-filter__text_value Италия
-                    li.card-filter__item
-                        span.card-filter__text Патрон
-                        span.card-filter__text_value Е14
-                    li.card-filter__item
-                        span.card-filter__text Коллекция
-                        span.card-filter__text_value MORRIS
-                    li.card-filter__item
-                        span.card-filter__text Напряжение
-                        span.card-filter__text_value 220 V
-                    li.card-filter__item
-                        span.card-filter__text Материал плафона
-                        span.card-filter__text_value Без плафона
-                    li.card-filter__item
-                        span.card-filter__text Количество патронов
-                        span.card-filter__text_value 8 шт
-                    li.card-filter__item
-                        span.card-filter__text Материал арматуры
-                        span.card-filter__text_value Акрил
-                    li.card-filter__item
-                        span.card-filter__text Крепеж
-                        span.card-filter__text_value На крюк
-                    li.card-filter__item
-                        span.card-filter__text Мощность Дублируется
+                        .card-filter__text_wrap
+                            button.btn-reset.card-filter__btn-info
+                            span.card-filter__text Мощность
                         span.card-filter__text_value 40 W
                     li.card-filter__item
-                        span.card-filter__text Площадь освещения
+                        .card-filter__text_wrap
+                            button.btn-reset.card-filter__btn-info
+                            span.card-filter__text Страна 
+                        span.card-filter__text_value Италия
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Патрон
+                        span.card-filter__text_value Е14
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Коллекция
+                        span.card-filter__text_value MORRIS
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Напряжение
+                        span.card-filter__text_value 220 V
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Материал плафона
+                        span.card-filter__text_value Без плафона
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Количество патронов
+                        span.card-filter__text_value 8 шт
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Материал арматуры
+                        span.card-filter__text_value Акрил
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Крепеж
+                        span.card-filter__text_value На крюк
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            button.btn-reset.card-filter__btn-info
+                            span.card-filter__text Мощность
+                        span.card-filter__text_value 40 W
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Площадь освещения
                         span.card-filter__text_value 24 м2
                     li.card-filter__item
-                        span.card-filter__text IP
+                        .card-filter__text_wrap
+                            span.card-filter__text IP
                         span.card-filter__text_value 20
                     li.card-filter__item
-                        span.card-filter__text Тип лампы
+                        .card-filter__text_wrap
+                            span.card-filter__text Тип лампы
                         span.card-filter__text_value Накаливания
                     li.card-filter__item
-                        span.card-filter__text Стиль лампы
+                        .card-filter__text_wrap
+                            span.card-filter__text Стиль лампы
                         span.card-filter__text_value Классический
                     li.card-filter__item
-                        span.card-filter__text Место применения
+                        .card-filter__text_wrap
+                            span.card-filter__text Место применения
                         span.card-filter__text_value В квартиру, В комнату
                     li.card-filter__item
-                        span.card-filter__text Вид рассеивателя
+                        .card-filter__text_wrap
+                            span.card-filter__text Вид рассеивателя
                         span.card-filter__text_value Нет
                     li.card-filter__item
-                        span.card-filter__text Диммер
+                        .card-filter__text_wrap
+                            span.card-filter__text Диммер
                         span.card-filter__text_value Да
-                .card-filter__top.card-filter__top--open
-                    .card-filter__toggle
-                    h3.card-filter__title.card-filter__title--active Материалы и цвета
+            .card-filter__bottom
+                .card-filter__top_sub.card-filter__top--open
+                    .card-filter__toggle_in
+                    h3.card-filter__title Материалы и цвета
                 ul.card-filter__list
                     li.card-filter__item
-                        span.card-filter__text Артикул
-                        span.card-filter__text_value A8889LM-8GY
+                        .card-filter__text_wrap
+                            span.card-filter__text Материал плафона
+                        span.card-filter__text_value Стекло
                     li.card-filter__item
-                        span.card-filter__text Интерьер
-                        span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
+                        .card-filter__text_wrap
+                            span.card-filter__text Цвет плафона
+                        span.card-filter__text_value Белый
                     li.card-filter__item
-                        span.card-filter__text Бренд
-                        span.card-filter__text_value Arte Lamp
+                        .card-filter__text_wrap
+                            span.card-filter__text Материал арматуры
+                        span.card-filter__text_value Металл
                     li.card-filter__item
-                        span.card-filter__text Мощность
-                        span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
-                .card-filter__top.card-filter__top--open
-                    .card-filter__toggle
-                    h3.card-filter__title.card-filter__title--active Источник света
+                        .card-filter__text_wrap
+                            span.card-filter__text Цвет светильника
+                        span.card-filter__text_value Бронза
+            .card-filter__bottom
+                .card-filter__top_sub.card-filter__top--open.card-filter__top-margin
+                    .card-filter__toggle_in
+                    h3.card-filter__title Источник света
                 ul.card-filter__list
                     li.card-filter__item
-                        span.card-filter__text Артикул
-                        span.card-filter__text_value A8889LM-8GY
+                        .card-filter__text_wrap
+                            span.card-filter__text Патрон
+                        span.card-filter__text_value G9
                     li.card-filter__item
-                        span.card-filter__text Интерьер
-                        span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
+                        .card-filter__text_wrap
+                            span.card-filter__text Количество патронов
+                        span.card-filter__text_value 12 шт
                     li.card-filter__item
-                        span.card-filter__text Бренд
-                        span.card-filter__text_value Arte Lamp
+                        .card-filter__text_wrap
+                            button.btn-reset.card-filter__btn-info
+                            span.card-filter__text Мощность
+                        span.card-filter__text_value 25 W
                     li.card-filter__item
-                        span.card-filter__text Мощность
-                        span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
-                .card-filter__top
-                    .card-filter__toggle
+                        .card-filter__text_wrap
+                            span.card-filter__text Напряжение
+                        span.card-filter__text_value 220 V
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Тип лампы
+                        span.card-filter__text_value Галогеновая
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Площадь освещения
+                        span.card-filter__text_value 14 м2
+            .card-filter__bottom
+                .card-filter__top_sub
+                    .card-filter__toggle_in
                     h3.card-filter__title Габариты светильника
                 ul.card-filter__list
                     li.card-filter__item
-                        span.card-filter__text Артикул
+                        .card-filter__text_wrap
+                            span.card-filter__text Артикул
                         span.card-filter__text_value A8889LM-8GY
                     li.card-filter__item
-                        span.card-filter__text Интерьер
+                        .card-filter__text_wrap
+                            span.card-filter__text Интерьер
                         span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
                     li.card-filter__item
-                        span.card-filter__text Бренд
+                        .card-filter__text_wrap
+                            span.card-filter__text Бренд
                         span.card-filter__text_value Arte Lamp
                     li.card-filter__item
-                        span.card-filter__text Мощность
+                        .card-filter__text_wrap
+                            span.card-filter__text Мощность
                         span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
-                .card-filter__top
-                    .card-filter__toggle
+            .card-filter__bottom
+                .card-filter__top_sub
+                    .card-filter__toggle_in
                     h3.card-filter__title Дополнительно
                 ul.card-filter__list
                     li.card-filter__item
-                        span.card-filter__text Артикул
+                        .card-filter__text_wrap
+                            span.card-filter__text Артикул
                         span.card-filter__text_value A8889LM-8GY
                     li.card-filter__item
-                        span.card-filter__text Интерьер
+                        .card-filter__text_wrap
+                            span.card-filter__text Интерьер
                         span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
                     li.card-filter__item
-                        span.card-filter__text Бренд
+                        .card-filter__text_wrap
+                            span.card-filter__text Бренд
                         span.card-filter__text_value Arte Lamp
                     li.card-filter__item
-                        span.card-filter__text Мощность
+                        .card-filter__text_wrap
+                            span.card-filter__text Мощность
                         span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
-        .card-filter.card-filter--open
+        .card-filter
             .card-filter__top
                 .card-filter__toggle
-                h3.card-content-filter__title Описание коллекции
+                h3.card-filter__title Описание коллекции
                 
             .card-filter__bottom
-                .card-filter__top
-                    .card-filter__toggle
-                    h3.card-content-filter__title основные
+                .card-filter__top_sub
+                    .card-filter__toggle_in
+                    h3.card-filter__title основные
                 ul.card-filter__list
                     li.card-filter__item
-                        span.card-filter__text Артикул
+                        .card-filter__text_wrap
+                            span.card-filter__text Артикул
                         span.card-filter__text_value A8889LM-8GY
                     li.card-filter__item
-                        span.card-filter__text Интерьер
+                        .card-filter__text_wrap
+                            span.card-filter__text Интерьер
                         span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
-        .card-filter.card-filter--open
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Бренд
+                        span.card-filter__text_value Arte Lamp
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            button.btn-reset.card-filter__btn-info
+                            span.card-filter__text Мощность
+                        span.card-filter__text_value 40 W
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            button.btn-reset.card-filter__btn-info
+                            span.card-filter__text Страна 
+                        span.card-filter__text_value Италия
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Патрон
+                        span.card-filter__text_value Е14
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Коллекция
+                        span.card-filter__text_value MORRIS
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Напряжение
+                        span.card-filter__text_value 220 V
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Материал плафона
+                        span.card-filter__text_value Без плафона
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Количество патронов
+                        span.card-filter__text_value 8 шт
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Материал арматуры
+                        span.card-filter__text_value Акрил
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Крепеж
+                        span.card-filter__text_value На крюк
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            button.btn-reset.card-filter__btn-info
+                            span.card-filter__text Мощность
+                        span.card-filter__text_value 40 W
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Площадь освещения
+                        span.card-filter__text_value 24 м2
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text IP
+                        span.card-filter__text_value 20
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Тип лампы
+                        span.card-filter__text_value Накаливания
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Стиль лампы
+                        span.card-filter__text_value Классический
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Место применения
+                        span.card-filter__text_value В квартиру, В комнату
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Вид рассеивателя
+                        span.card-filter__text_value Нет
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Диммер
+                        span.card-filter__text_value Да
+            .card-filter__bottom
+                .card-filter__top_sub.card-filter__top--open
+                    .card-filter__toggle_in
+                    h3.card-filter__title Материалы и цвета
+                ul.card-filter__list
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Материал плафона
+                        span.card-filter__text_value Стекло
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Цвет плафона
+                        span.card-filter__text_value Белый
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Материал арматуры
+                        span.card-filter__text_value Металл
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Цвет светильника
+                        span.card-filter__text_value Бронза
+            .card-filter__bottom
+                .card-filter__top_sub.card-filter__top--open.card-filter__top-margin
+                    .card-filter__toggle_in
+                    h3.card-filter__title Источник света
+                ul.card-filter__list
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Патрон
+                        span.card-filter__text_value G9
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Количество патронов
+                        span.card-filter__text_value 12 шт
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            button.btn-reset.card-filter__btn-info
+                            span.card-filter__text Мощность
+                        span.card-filter__text_value 25 W
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Напряжение
+                        span.card-filter__text_value 220 V
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Тип лампы
+                        span.card-filter__text_value Галогеновая
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Площадь освещения
+                        span.card-filter__text_value 14 м2
+            .card-filter__bottom
+                .card-filter__top_sub
+                    .card-filter__toggle_in
+                    h3.card-filter__title Габариты светильника
+                ul.card-filter__list
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Артикул
+                        span.card-filter__text_value A8889LM-8GY
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Интерьер
+                        span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Бренд
+                        span.card-filter__text_value Arte Lamp
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Мощность
+                        span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
+            .card-filter__bottom
+                .card-filter__top_sub
+                    .card-filter__toggle_in
+                    h3.card-filter__title Дополнительно
+                ul.card-filter__list
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Артикул
+                        span.card-filter__text_value A8889LM-8GY
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Интерьер
+                        span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Бренд
+                        span.card-filter__text_value Arte Lamp
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Мощность
+                        span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
+        .card-filter
             .card-filter__top
                 .card-filter__toggle
-                h3.card-content-filter__title Еще из той же коллекции
+                h3.card-filter__title Еще из той же коллекции
                 
             .card-filter__bottom
-                .card-filter__top
-                    .card-filter__toggle
-                    h3.card-content-filter__title основные
+                .card-filter__top_sub
+                    .card-filter__toggle_in
+                    h3.card-filter__title основные
                 ul.card-filter__list
                     li.card-filter__item
-                        span.card-filter__text Артикул
+                        .card-filter__text_wrap
+                            span.card-filter__text Артикул
                         span.card-filter__text_value A8889LM-8GY
                     li.card-filter__item
-                        span.card-filter__text Интерьер
+                        .card-filter__text_wrap
+                            span.card-filter__text Интерьер
                         span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
-        .card-filter.card-filter--open
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Бренд
+                        span.card-filter__text_value Arte Lamp
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            button.btn-reset.card-filter__btn-info
+                            span.card-filter__text Мощность
+                        span.card-filter__text_value 40 W
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            button.btn-reset.card-filter__btn-info
+                            span.card-filter__text Страна 
+                        span.card-filter__text_value Италия
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Патрон
+                        span.card-filter__text_value Е14
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Коллекция
+                        span.card-filter__text_value MORRIS
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Напряжение
+                        span.card-filter__text_value 220 V
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Материал плафона
+                        span.card-filter__text_value Без плафона
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Количество патронов
+                        span.card-filter__text_value 8 шт
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Материал арматуры
+                        span.card-filter__text_value Акрил
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Крепеж
+                        span.card-filter__text_value На крюк
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            button.btn-reset.card-filter__btn-info
+                            span.card-filter__text Мощность
+                        span.card-filter__text_value 40 W
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Площадь освещения
+                        span.card-filter__text_value 24 м2
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text IP
+                        span.card-filter__text_value 20
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Тип лампы
+                        span.card-filter__text_value Накаливания
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Стиль лампы
+                        span.card-filter__text_value Классический
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Место применения
+                        span.card-filter__text_value В квартиру, В комнату
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Вид рассеивателя
+                        span.card-filter__text_value Нет
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Диммер
+                        span.card-filter__text_value Да
+            .card-filter__bottom
+                .card-filter__top_sub.card-filter__top--open
+                    .card-filter__toggle_in
+                    h3.card-filter__title Материалы и цвета
+                ul.card-filter__list
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Материал плафона
+                        span.card-filter__text_value Стекло
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Цвет плафона
+                        span.card-filter__text_value Белый
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Материал арматуры
+                        span.card-filter__text_value Металл
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Цвет светильника
+                        span.card-filter__text_value Бронза
+            .card-filter__bottom
+                .card-filter__top_sub.card-filter__top--open.card-filter__top-margin
+                    .card-filter__toggle_in
+                    h3.card-filter__title Источник света
+                ul.card-filter__list
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Патрон
+                        span.card-filter__text_value G9
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Количество патронов
+                        span.card-filter__text_value 12 шт
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            button.btn-reset.card-filter__btn-info
+                            span.card-filter__text Мощность
+                        span.card-filter__text_value 25 W
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Напряжение
+                        span.card-filter__text_value 220 V
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Тип лампы
+                        span.card-filter__text_value Галогеновая
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Площадь освещения
+                        span.card-filter__text_value 14 м2
+            .card-filter__bottom
+                .card-filter__top_sub
+                    .card-filter__toggle_in
+                    h3.card-filter__title Габариты светильника
+                ul.card-filter__list
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Артикул
+                        span.card-filter__text_value A8889LM-8GY
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Интерьер
+                        span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Бренд
+                        span.card-filter__text_value Arte Lamp
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Мощность
+                        span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
+            .card-filter__bottom
+                .card-filter__top_sub
+                    .card-filter__toggle_in
+                    h3.card-filter__title Дополнительно
+                ul.card-filter__list
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Артикул
+                        span.card-filter__text_value A8889LM-8GY
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Интерьер
+                        span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Бренд
+                        span.card-filter__text_value Arte Lamp
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Мощность
+                        span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
+        .card-filter
             .card-filter__top
                 .card-filter__toggle
-                h3.card-content-filter__title Лампочки
+                h3.card-filter__title Лампочки
                 
             .card-filter__bottom
-                .card-filter__top
-                    .card-filter__toggle
-                    h3.card-content-filter__title основные
+                .card-filter__top_sub
+                    .card-filter__toggle_in
+                    h3.card-filter__title основные
                 ul.card-filter__list
                     li.card-filter__item
-                        span.card-filter__text Артикул
+                        .card-filter__text_wrap
+                            span.card-filter__text Артикул
                         span.card-filter__text_value A8889LM-8GY
                     li.card-filter__item
-                        span.card-filter__text Интерьер
+                        .card-filter__text_wrap
+                            span.card-filter__text Интерьер
                         span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
-
-                    
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Бренд
+                        span.card-filter__text_value Arte Lamp
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            button.btn-reset.card-filter__btn-info
+                            span.card-filter__text Мощность
+                        span.card-filter__text_value 40 W
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            button.btn-reset.card-filter__btn-info
+                            span.card-filter__text Страна 
+                        span.card-filter__text_value Италия
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Патрон
+                        span.card-filter__text_value Е14
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Коллекция
+                        span.card-filter__text_value MORRIS
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Напряжение
+                        span.card-filter__text_value 220 V
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Материал плафона
+                        span.card-filter__text_value Без плафона
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Количество патронов
+                        span.card-filter__text_value 8 шт
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Материал арматуры
+                        span.card-filter__text_value Акрил
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Крепеж
+                        span.card-filter__text_value На крюк
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            button.btn-reset.card-filter__btn-info
+                            span.card-filter__text Мощность
+                        span.card-filter__text_value 40 W
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Площадь освещения
+                        span.card-filter__text_value 24 м2
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text IP
+                        span.card-filter__text_value 20
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Тип лампы
+                        span.card-filter__text_value Накаливания
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Стиль лампы
+                        span.card-filter__text_value Классический
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Место применения
+                        span.card-filter__text_value В квартиру, В комнату
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Вид рассеивателя
+                        span.card-filter__text_value Нет
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Диммер
+                        span.card-filter__text_value Да
+            .card-filter__bottom
+                .card-filter__top_sub.card-filter__top--open
+                    .card-filter__toggle_in
+                    h3.card-filter__title Материалы и цвета
+                ul.card-filter__list
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Материал плафона
+                        span.card-filter__text_value Стекло
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Цвет плафона
+                        span.card-filter__text_value Белый
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Материал арматуры
+                        span.card-filter__text_value Металл
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Цвет светильника
+                        span.card-filter__text_value Бронза
+            .card-filter__bottom
+                .card-filter__top_sub.card-filter__top--open.card-filter__top-margin
+                    .card-filter__toggle_in
+                    h3.card-filter__title Источник света
+                ul.card-filter__list
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Патрон
+                        span.card-filter__text_value G9
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Количество патронов
+                        span.card-filter__text_value 12 шт
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            button.btn-reset.card-filter__btn-info
+                            span.card-filter__text Мощность
+                        span.card-filter__text_value 25 W
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Напряжение
+                        span.card-filter__text_value 220 V
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Тип лампы
+                        span.card-filter__text_value Галогеновая
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Площадь освещения
+                        span.card-filter__text_value 14 м2
+            .card-filter__bottom
+                .card-filter__top_sub
+                    .card-filter__toggle_in
+                    h3.card-filter__title Габариты светильника
+                ul.card-filter__list
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Артикул
+                        span.card-filter__text_value A8889LM-8GY
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Интерьер
+                        span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Бренд
+                        span.card-filter__text_value Arte Lamp
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Мощность
+                        span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
+            .card-filter__bottom
+                .card-filter__top_sub
+                    .card-filter__toggle_in
+                    h3.card-filter__title Дополнительно
+                ul.card-filter__list
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Артикул
+                        span.card-filter__text_value A8889LM-8GY
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Интерьер
+                        span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Бренд
+                        span.card-filter__text_value Arte Lamp
+                    li.card-filter__item
+                        .card-filter__text_wrap
+                            span.card-filter__text Мощность
+                        span.card-filter__text_value Для гостиной, Для кафе, ресторанов, Для офиса
+        //- .card-filter
+        //-     .card-filter__top
+        //-         .card-filter__toggle
+        //-         h3.card-filter__title Описание коллекции
+                
+        //-     .card-filter__bottom
+        //-         .card-filter__top.card-filter__top--open
+        //-             .card-filter__toggle
+        //-             h3.card-filter__title основные
+        //-         ul.card-filter__list
+        //-             li.card-filter__item
+        //-                 span.card-filter__text Артикул
+        //-                 span.card-filter__text_value A8889LM-8GY
+        //- .card-filter
+        //-     .card-filter__top
+        //-         .card-filter__toggle
+        //-         h3.card-filter__title Еще из той же коллекции
+                
+        //-     .card-filter__bottom
+        //-         .card-filter__top
+        //-             .card-filter__toggle
+        //-             h3.card-filter__title основные
+        //-         ul.card-filter__list
+        //-             li.card-filter__item
+        //-                 span.card-filter__text Артикул
+        //-                 span.card-filter__text_value A8889LM-8GY
+        //- .card-filter
+        //-     .card-filter__top
+        //-         .card-filter__toggle
+        //-         h3.card-filter__title Лампочки
+                
+        //-     .card-filter__bottom
+        //-         .card-filter__top.card-filter__top--open
+        //-             .card-filter__toggle
+        //-             h3.card-filter__title основные
+        //-         ul.card-filter__list
+        //-             li.card-filter__item
+        //-                 span.card-filter__text Артикул
+        //-                 span.card-filter__text_value A8889LM-8GY
+    .card-filter__btn
+        button.default-btn.btn-reset.card-filter__main_btn Все люстры на штанге
+    .download-docs
+        .download-docs__top
+            .download-docs__toggle
+            h3.download-docs__title Документы для скачивания
+        .download-docs__wrap
+            .card-top__additional-info_wrap
+                button.btn-reset.card-top__icon.card-top__rar
+                .card-top__additional-info_text
+                    .card-top__additional-info_text-wrap
+                        .card-top__additional-info_title Инструкции по сборке
+                        a(href="#!").card-top__additional-info_subtitle A3988SP-12AB_ai
+            .card-top__additional-info_wrap
+                button.btn-reset.card-top__icon.card-top__zip
+                .card-top__additional-info_text
+                    .card-top__additional-info_text-wrap
+                        .card-top__additional-info_title Руководства по эксплуатации
+                        a(href="#!").card-top__additional-info_subtitle ARTELAMP_manual
+            .card-top__additional-info_wrap
+                button.btn-reset.card-top__icon.card-top__pdf
+                .card-top__additional-info_text
+                    .card-top__additional-info_text-wrap
+                        .card-top__additional-info_title Сертификаты
+                        a(href="#!").card-top__additional-info_subtitle АРТЕ Сертификат соответствия на светильники№2
+            .card-top__additional-info_wrap
+                button.btn-reset.card-top__icon.card-top__pdf
+                .card-top__additional-info_text
+                    .card-top__additional-info_text-wrap
+                        .card-top__additional-info_title Технические рисунки
+                        a(href="#!").card-top__additional-info_subtitle A3988SP-12AB_drawing
