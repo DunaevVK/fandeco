@@ -7,6 +7,9 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    @media (min-width: $sm) {
+        display: none;
+    }
 
     .footer {
         &__btn {
