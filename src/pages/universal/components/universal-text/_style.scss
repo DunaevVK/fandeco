@@ -1,0 +1,39 @@
+@import '../../../../scss/sass-variables';
+
+.text {
+    display: flex;
+    flex-direction: column;
+    // row-gap: 5px;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 28.5px;
+    font-weight: 300;
+
+    &__title {
+        &_italic {
+            font-style: italic;
+        }
+    }
+
+    &__subtitle {
+        &_italic {
+            font-style: italic;
+        }
+    }
+    &__wrap {
+        
+    }
+    &__text {
+        width: 99%;
+
+        &_italic {
+            font-style: italic;
+        }
+    }
+}
+.rectangle {
+    width: 96px;
+    height: 40px;
+    background: rgba(196, 196, 196, 1);
+
+}

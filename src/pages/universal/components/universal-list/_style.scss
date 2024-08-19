@@ -1,0 +1,51 @@
+@import '../../../../scss/sass-variables';
+
+.universal-list {
+    margin-top: 44px;
+
+    &__title {
+        font-size: 18px;
+        line-height: 38px;
+
+        &_list {
+            margin-top: 86px;
+        }
+    }
+
+    &__list {
+        margin-top: 4px;
+
+        &_two {
+            margin-top: 30px;
+        }
+
+        &_ordered {
+            margin-top: 2px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        font-size: 18px;
+        line-height: 25px;
+        padding: 7.5px 0;
+
+        &_text {
+            &-bold {
+                font-weight: 700;
+            }
+        }
+    }
+
+    & ol {
+        // padding-bottom: 20px;
+
+        .universal-list__item {
+            column-gap: 5px;
+
+        }
+    }
+
+}

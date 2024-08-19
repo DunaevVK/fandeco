@@ -1,0 +1,199 @@
+@import '../../../../scss/sass-variables';
+
+.catalog-page {
+    margin-top: 10px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+        // gap: 10px;
+        @media (min-width: $xl) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            row-gap: 8px;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-grey);
+        row-gap: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+
+        @media (min-width: $xl) {
+            width: 100%;
+            row-gap: 20px;
+            column-gap: 20px;
+            overflow: hidden;
+            position: relative;
+
+            &:nth-child(2),
+            &:nth-child(3) {
+                width: calc(50% - 10px);
+                flex-direction: row;
+
+            }
+
+            &:nth-child(2),
+            &:nth-child(4),
+            &:nth-child(6) {
+                margin-right: 20px;
+            }
+
+            &:nth-child(4),
+            &:nth-child(7) {
+                width: calc(25% - 10px);
+            }
+
+            &:nth-child(5),
+            &:nth-child(6) {
+                width: calc(75% - 10px);
+            }
+
+            // &:nth-child(7) {
+            //     flex-direction: column-reverse;
+            // }
+        }
+
+        &_open {
+            .catalog-page__drop {
+                display: block;
+            }
+
+            .catalog-page__menu_open {
+                rotate: 0deg;
+            }
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        @media (min-width: $xl) {
+            padding: 40px 20px;
+            // align-items: flex-start;
+        }
+    }
+
+    &__card-wrap {
+        display: flex;
+        align-items: center;
+
+        @media (min-width: $xl) {
+            width: 100%;
+            position: relative;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            // &:nth-child(7) {
+            //     flex-direction: column-reverse;
+            // }
+
+            // overflow: hidden;
+        }
+    }
+
+    &__image {
+        // width: 60px;
+        // height: 60px;
+        min-width: 60px;
+        // min-width: 60px;
+        // max-width: 60px;
+        // max-height: 60px;
+        height: 60px;
+        // height: 100%;
+        aspect-ratio: 1 / 1;
+
+        @media (min-width: $xl) {
+            max-width: 451px;
+            min-height: 310px;
+
+        }
+
+        & img {
+            max-width: initial;
+            max-height: initial;
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            // max-width: 100%;
+            // // max-height: 100%;
+            // position: relative;
+            // display: block;
+            // width: 100%;
+            // // height: 100%;
+            // object-fit: contain;
+
+            @media (min-width: $xl) {
+                // left: 5%;
+                // bottom: 24%;
+                // left: 20px;
+                // top: -107px;
+                left: 0;
+                top: 0;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+
+        @media (min-width: $xl) {
+            font-size: 30px;
+        }
+    }
+
+    &__menu_open {
+        display: block;
+        width: 100%;
+        max-width: 20px;
+        min-height: 20px;
+        // padding: 5px 10px;
+        rotate: 270deg;
+        background: no-repeat center url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik01LjM5MDIgNS43Nzc5TDkuODQwMjUgMS4zMjc3N0M5Ljk0MzI1IDEuMjI0ODUgMTAgMS4wODc0NSAxMCAwLjk0MDk0OEMxMCAwLjc5NDQ0NSA5Ljk0MzI1IDAuNjU3MDQ4IDkuODQwMjUgMC41NTQxMjJMOS41MTI2MSAwLjIyNjQwMUM5LjI5OTExIDAuMDEzMTUwOCA4Ljk1MjEyIDAuMDEzMTUwOCA4LjczODk1IDAuMjI2NDAxTDUuMDAyMDcgMy45NjMyOEwxLjI2MTA1IDAuMjIyMjU0QzEuMTU4MDQgMC4xMTkzMjggMS4wMjA3MiAwLjA2MjQ5OTYgMC44NzQzMDIgMC4wNjI0OTk2QzAuNzI3NzE3IDAuMDYyNDk5NiAwLjU5MDQwMSAwLjExOTMyOCAwLjQ4NzMxMiAwLjIyMjI1NEwwLjE1OTc1NCAwLjU0OTk3NUMwLjA1Njc0NzQgMC42NTI5ODMgLTMuMTgxMzFlLTA4IDAuNzkwMjk5IC0zLjgyMTdlLTA4IDAuOTM2ODAyQy00LjQ2MjA4ZS0wOCAxLjA4MzMgMC4wNTY3NDc0IDEuMjIwNyAwLjE1OTc1NCAxLjMyMzYzTDQuNjEzODYgNS43Nzc5QzQuNzE3MiA1Ljg4MTA3IDQuODU1MTYgNS45Mzc3NCA1LjAwMTgzIDUuOTM3NDFDNS4xNDkwNiA1LjkzNzc0IDUuMjg2OTUgNS44ODEwNyA1LjM5MDIgNS43Nzc5WiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg==);
+
+        @media (min-width: $xl) {
+            display: none;
+        }
+    }
+
+    &__drop {
+        display: none;
+        margin-bottom: 30px;
+
+        @media (min-width: $xl) {
+            position: absolute;
+            top: 28%;
+            left: -40px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        padding-left: 60px;
+        // padding-bottom: 10px;
+    }
+
+    &__item {
+        // width: min-content;
+        cursor: pointer;
+    }
+
+    &__link {
+        font-size: 17px;
+        line-height: 22px;
+    }
+}

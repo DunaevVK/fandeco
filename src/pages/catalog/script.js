@@ -1,0 +1,1 @@
+//=require components/catalog/catalog.js
