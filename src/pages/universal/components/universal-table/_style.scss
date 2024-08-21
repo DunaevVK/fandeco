@@ -1,0 +1,113 @@
+@import '../../../../scss/sass-variables';
+
+
+.universal-table {
+    display: flex;
+    flex-direction: column;
+    margin-top: 197px;
+    padding-right: 28px;
+
+    &__title {
+        width: 100%;
+        height: 40px;
+        padding: 10.5px 10px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 17px;
+        text-transform: capitalize;
+        border-left: 1px solid #000;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+        transition: all 0.3s;
+
+        @media (min-width: $xl) {
+            font-size: 17px;
+        }
+
+        &--active {
+            background-color: var(--color-black);
+            color: var(--color-white);
+
+        }
+    }
+
+    &__list {
+        font-weight: 300;
+        margin-bottom: 40px;
+
+        &:last-of-type {
+            margin-bottom: 20px;
+        }
+
+        @media (min-width: $xl) {}
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        padding-left: 0;
+        padding-right: 0;
+
+        &:nth-of-type(even) {
+            background-color: var(--color-grey);
+        }
+
+    }
+
+    &__btn-info {
+        min-width: 20px;
+        height: 18px;
+        margin-right: 10px;
+        background: center no-repeat url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iOC43NzUiIHRyYW5zZm9ybT0icm90YXRlKDkwIDEwIDEwKSIgZmlsbD0iYmxhY2siIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMC40NSIvPgo8cGF0aCBkPSJNNi4wOTczNCAxMC45ODE5TDQuMzgxODQgMTAuOTgxOUw0LjM4MTg0IDkuMDE4M0w2LjA5NzM0IDkuMDE4M0w2LjA5NzM0IDEwLjk4MTlaTTE1LjE4MTggMTAuOTA2NEw3LjMwNTg5IDEwLjkwNjRMNy4zMDU4OSA5LjA3NzNMMTUuMTgxOCA5LjA3NzNMMTUuMTgxOCAxMC45MDY0WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==);
+        rotate: 90deg;
+
+        @media (min-width: $xl) {
+            margin-right: 0;
+        }
+    }
+
+    &__text {
+
+        line-height: 22px;
+
+        @media (min-width: $xl) {
+            padding-left: 10px;
+            line-height: 17px;
+        }
+
+        &_blue {
+            color: #2399e2;
+            line-height: 21px;
+        }
+
+        &_wrap {
+            display: flex;
+            align-items: center;
+            min-width: 50%;
+
+            & button {
+                @media (min-width: $xl) {
+                    padding-left: 33px;
+                    margin-right: -9px;
+                }
+
+            }
+        }
+    }
+
+    &__text_value {
+        text-align: right;
+        line-height: 22px;
+        min-width: 50%;
+
+        @media (min-width: $xl) {
+            padding-right: 10px;
+            line-height: 20px;
+        }
+    }
+
+}

@@ -1,13 +1,25 @@
 @import '../../../../scss/sass-variables';
 
+.universal-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    row-gap: 48px;
+}
+
 .text {
     display: flex;
     flex-direction: column;
     // row-gap: 5px;
-    margin-top: 30px;
+
     font-size: 18px;
     line-height: 28.5px;
     font-weight: 300;
+
+    &-main {
+        font-size: 18px;
+        line-height: 38px;
+    }
 
     &__title {
         &_italic {
@@ -19,19 +31,60 @@
         &_italic {
             font-style: italic;
         }
+
+
     }
-    &__wrap {
-        
-    }
+
+    &__wrap {}
+
     &__text {
         width: 99%;
 
         &_italic {
             font-style: italic;
         }
+
+        &_bold {
+            font-weight: 700;
+        }
+
+        &_red {
+            letter-spacing: 0.2px;
+            color: var(--color-red);
+        }
+
+        &_blue {
+            color: #2399e2;
+        }
+
+        &_margin {
+            margin-top: -12px;
+        }
+
+        &_cite {
+            margin-top: 84px;
+
+            &-wrap {
+                margin-top: 15px;
+                display: flex;
+                gap: 33px;
+
+                & img {
+                    max-width: 170px;
+                    height: 172px;
+                }
+            }
+
+        }
+
+        &_wrap {
+            max-width: 348px;
+        }
     }
 }
+
 .rectangle {
+    margin-top: -2px;
     width: 96px;
     height: 40px;
     background: rgba(196, 196, 196, 1);

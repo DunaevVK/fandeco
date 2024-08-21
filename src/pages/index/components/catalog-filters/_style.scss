@@ -324,3 +324,126 @@
         font-weight: 300;
     }
 }
+
+.runner-block {
+    width: 100%;
+    position: relative;
+    margin: 20px 0;
+
+    &__runner {
+        -webkit-appearance: none;
+        width: 100%;
+        background: transparent;
+        position: absolute;
+        pointer-events: none;
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 10px;
+            height: 10px;
+            background: #007bff;
+            cursor: pointer;
+            border-radius: 50%;
+
+        }
+
+        &::-moz-range-thumb {
+            width: 10px;
+            height: 10px;
+            background: #007bff;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+    }
+
+    &__filter {}
+
+    &__min {
+        position: absolute;
+        top: -30px;
+        font-size: 14px;
+        color: #333;
+    }
+
+    &__max {}
+}
+
+.range-slider {
+    height: 3px;
+    position: relative;
+    background-color: black;
+    border-radius: 1px;
+}
+
+.range-selected {
+    height: 100%;
+    left: 30%;
+    right: 30%;
+    position: absolute;
+    border-radius: 1px;
+    background-color: black;
+}
+
+.range-input {
+    position: relative;
+}
+
+.range-input input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &::-webkit-slider-thumb {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: 3px solid black;
+        background-color: #fff;
+        pointer-events: auto;
+        -webkit-appearance: none;
+    }
+
+    &::-moz-range-thumb {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        border: 3px solid black;
+        background-color: #fff;
+        pointer-events: auto;
+        -moz-appearance: none;
+    }
+}
+
+.range-price {
+    margin: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-appearance: textfield;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+}
+
+.range-price input {
+    width: 158px;
+    padding: 5px;
+    appearance: none;
+
+    &:hover {
+        appearance: none;
+    }
+
+    &:first-of-type {
+        margin-right: 15px;
+    }
+}
