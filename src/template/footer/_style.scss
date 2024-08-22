@@ -1,21 +1,24 @@
 @import '../../scss/sass-variables';
 
 .footer {
-    &__content {
-        background-color: var(--color-font-primary);
-        color: var(--color-white);
-        padding: 40px 10px 20px;
-        font-weight: 300;
+    margin-top: 40px;
+    background-color: var(--color-font-primary);
 
-        @media (min-width: $lg) {
-            padding: 40px 20px;
-        }
+    @media (min-width: $lg) {
+        margin-top: 60px;
+    }
+
+    &__content {
+        color: var(--color-white);
+        padding: 40px 0px;
+        font-weight: 300;
     }
 
     &__top {
         display: flex;
         flex-direction: column;
         row-gap: 20px;
+        column-gap: 20px;
         padding-bottom: 40px;
         box-shadow: 0px 1px 0px 0px var(--color-white);
 

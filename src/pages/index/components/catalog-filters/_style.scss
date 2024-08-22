@@ -108,8 +108,10 @@
             border: 1px solid #000;
             position: relative;
 
-            &:hover {
-                background-color: var(--color-grey-sec);
+            @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    background-color: var(--color-grey-sec);
+                }
             }
 
         }
@@ -303,9 +305,12 @@
         line-height: 22px;
         transition: all 0.3s;
 
-        &:hover {
-            box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 1);
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 1);
+            }
         }
+
 
     }
 
@@ -439,9 +444,9 @@
     padding: 5px;
     appearance: none;
 
-    &:hover {
-        appearance: none;
-    }
+    // &:hover {
+    //     appearance: none;
+    // }
 
     &:first-of-type {
         margin-right: 15px;
