@@ -347,8 +347,10 @@
             column-gap: 10px;
         }
 
-        &:hover {
-            background-color: var(--color-font-secondary);
+        @media (hover: hover) and (pointer: fine) {
+            &:hover {
+                background-color: var(--color-font-secondary);
+            }
         }
 
         &:not(:last-of-type) {
