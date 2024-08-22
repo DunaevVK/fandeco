@@ -10,60 +10,76 @@ section.catalog-page
                 .catalog-page__collapse
                     .catalog-page__inner
                         ul
-                            li
-                                .catalog-page__item-title
+                            //- Только для li, лежащих на первом уровне вложенности, добавляем класс .catalog-page__root
+                            li.catalog-page__root
+                                .catalog-page__item-title(data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png")
                                     span Системы освещения
                                     i
                                 .catalog-page__collapse
                                     .catalog-page__inner
                                         ul
                                             li
-                                                .catalog-page__item-title
+                                                .catalog-page__item-title(data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png")
                                                     span Однофазная трековая система
                                                     i
                                                 .catalog-page__collapse
                                                     .catalog-page__inner
                                                         ul
                                                             li
-                                                                a.catalog-page__item-title(href="#!") Магнитная трековая система OPTIMA
+                                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png") Магнитная трековая система OPTIMA
                                                             li
-                                                                a.catalog-page__item-title(href="#!") Шинопровод текстильный Decorato
+                                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png") Шинопровод текстильный Decorato
                                                             li
-                                                                a.catalog-page__item-title(href="#!") Блоки питания Decorato
+                                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png") Блоки питания Decorato
                                                             li
-                                                                a.catalog-page__item-title(href="#!") Аксессуары
+                                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/decor-light.png") Аксессуары
                                             li
-                                                .catalog-page__item-title
-                                                    span Трековая система на ремнях Decorato
-                                                    i
+                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png") Трековая система на ремнях Decorato
                                             li
-                                                a.catalog-page__item-title(href="#!")
-                                                    span Тросовая система SKYCROSS
+                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/acc.png") Тросовая система SKYCROSS
 
-                            li
-                                .catalog-page__item-title
-                                    span Витринные светильники
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png") Витринные светильники
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png") Гибкий неон
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png") Настенные светильники
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png") Потолочные светильники
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/acc.png") Алюминиевые профили
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png") Светодиодные ленты
+
+                            li.catalog-page__root
+                                .catalog-page__item-title(data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png")
+                                    span Системы освещения
                                     i
-                            li
-                                .catalog-page__item-title
-                                    span Гибкий неон
-                                    i
-                            li
-                                .catalog-page__item-title
-                                    span Настенные светильники
-                                    i
-                            li
-                                .catalog-page__item-title
-                                    span Потолочные светильники
-                                    i
-                            li
-                                .catalog-page__item-title
-                                    span Алюминиевые профили
-                                    i
-                            li
-                                a.catalog-page__item-title(href="#!")
-                                    span Светодиодные ленты
-            .catalog-page__card.catalog-page__card_50
+                                .catalog-page__collapse
+                                    .catalog-page__inner
+                                        ul
+                                            li
+                                                .catalog-page__item-title(data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png")
+                                                    span Однофазная трековая система
+                                                    i
+                                                .catalog-page__collapse
+                                                    .catalog-page__inner
+                                                        ul
+                                                            li
+                                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png") Магнитная трековая система OPTIMA
+                                                            li
+                                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png") Шинопровод текстильный Decorato
+                                                            li
+                                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png") Блоки питания Decorato
+                                                            li
+                                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/decor-light.png") Аксессуары
+                                            li
+                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png") Трековая система на ремнях Decorato
+                                            li
+                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/acc.png") Тросовая система SKYCROSS
+
+
+            .catalog-page__card.catalog-page__card_75
                 .catalog-page__pic.catalog-page__pic_street-light
                 .catalog-page__title
                     span Уличное освещение
@@ -71,9 +87,76 @@ section.catalog-page
                 .catalog-page__collapse
                     .catalog-page__inner
                         ul
-                            li
-                            li
-            .catalog-page__card.catalog-page__card_50
+                            //- Только для li, лежащих на первом уровне вложенности, добавляем класс .catalog-page__root
+                            li.catalog-page__root
+                                .catalog-page__item-title(data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png")
+                                    span Системы освещения
+                                    i
+                                .catalog-page__collapse
+                                    .catalog-page__inner
+                                        ul
+                                            li
+                                                .catalog-page__item-title(data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png")
+                                                    span Однофазная трековая система
+                                                    i
+                                                .catalog-page__collapse
+                                                    .catalog-page__inner
+                                                        ul
+                                                            li
+                                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png") Магнитная трековая система OPTIMA
+                                                            li
+                                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png") Шинопровод текстильный Decorato
+                                                            li
+                                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png") Блоки питания Decorato
+                                                            li
+                                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/decor-light.png") Аксессуары
+                                            li
+                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png") Трековая система на ремнях Decorato
+                                            li
+                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/acc.png") Тросовая система SKYCROSS
+
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png") Витринные светильники
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png") Гибкий неон
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png") Настенные светильники
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png") Потолочные светильники
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/acc.png") Алюминиевые профили
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png") Светодиодные ленты
+
+                            li.catalog-page__root
+                                .catalog-page__item-title(data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png")
+                                    span Системы освещения
+                                    i
+                                .catalog-page__collapse
+                                    .catalog-page__inner
+                                        ul
+                                            li
+                                                .catalog-page__item-title(data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png")
+                                                    span Однофазная трековая система
+                                                    i
+                                                .catalog-page__collapse
+                                                    .catalog-page__inner
+                                                        ul
+                                                            li
+                                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png") Магнитная трековая система OPTIMA
+                                                            li
+                                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-source.png") Шинопровод текстильный Decorato
+                                                            li
+                                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png") Блоки питания Decorato
+                                                            li
+                                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/decor-light.png") Аксессуары
+                                            li
+                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png") Трековая система на ремнях Decorato
+                                            li
+                                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/acc.png") Тросовая система SKYCROSS
+
+
+            .catalog-page__card.catalog-page__card_25
                 .catalog-page__pic.catalog-page__pic_light-source
                 .catalog-page__title
                     span Источники
@@ -81,9 +164,11 @@ section.catalog-page
                 .catalog-page__collapse
                     .catalog-page__inner
                         ul
-                            li
-                            li
-            .catalog-page__card.catalog-page__card_25
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png") Светодиодные модули
+
+
+            .catalog-page__card.catalog-page__card_50
                 .catalog-page__pic.catalog-page__pic_light-manage
                 .catalog-page__title
                     span Управление светом
@@ -91,18 +176,34 @@ section.catalog-page
                 .catalog-page__collapse
                     .catalog-page__inner
                         ul
-                            li
-                            li
-            .catalog-page__card.catalog-page__card_75
-                .catalog-page__pic.catalog-page__pic_docor-light
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png") Контроллеры
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png") Панель управления
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/decor-light.png") Диммеры
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png") Релейные модули
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/func-light.png") Светильники настенные
+
+
+            .catalog-page__card.catalog-page__card_50
+                .catalog-page__pic.catalog-page__pic_decor-light
                 .catalog-page__title
                     span Декоративное освещение
                     i
                 .catalog-page__collapse
                     .catalog-page__inner
                         ul
-                            li
-                            li
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/adapters.png") Люстры
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png") Светильники
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/func-light.png") Споты
+
+
             .catalog-page__card.catalog-page__card_75
                 .catalog-page__pic.catalog-page__pic_adapters
                 .catalog-page__title
@@ -111,8 +212,12 @@ section.catalog-page
                 .catalog-page__collapse
                     .catalog-page__inner
                         ul
-                            li
-                            li
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/decor-light.png") Блоки питания 24В
+                            li.catalog-page__root
+                                a.catalog-page__item-title(href="#!" data-pic="https://aws.massive.ru/artelamp.ru/lightopt/street-light.png") Блоки питания 48В
+
+
             .catalog-page__card.catalog-page__card_25
                 .catalog-page__pic.catalog-page__pic_acc
                 .catalog-page__title
