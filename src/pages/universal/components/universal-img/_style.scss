@@ -1,0 +1,25 @@
+@import '../../../../scss/sass-variables';
+
+.universal-img {
+    display: flex;
+    gap: 40px;
+    margin-top: 65px;
+    font-size: 18px;
+    line-height: 38px;
+
+    &__text {
+        width: calc((100% - 40px) /2);
+        margin-top: -10px;
+        letter-spacing: -0.1px;
+    }
+
+    &__img {
+        width: calc((100% - 40px) /2);
+        min-width: 53%;
+        padding-right: 28px;
+
+        & img {
+            width: 100%;
+        }
+    }
+}
