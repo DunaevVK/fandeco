@@ -78,7 +78,7 @@ function resetAllCardsHeight(node) {
     })
 }
 
-function fixAllCardsHeight(node) {
+function fixAllCardsHeight() {
     const collapses = document.querySelectorAll('.catalog-page__collapse.open')
     let collapseBottom = 0
     let collapseNode
