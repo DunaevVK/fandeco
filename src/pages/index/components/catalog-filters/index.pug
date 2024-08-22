@@ -7,6 +7,15 @@
             h3.catalog-filter__title тип светильников
             .catalog-filter__toggle
         .catalog-filter__bottom
+            .range
+                .range-slider
+                    span.range-selected
+            .range-input
+                input(type="range" min="0" max="1000" value="300" step="10").min
+                input(type="range" min="0" max="1000" value="700" step="10").max
+            .range-price
+                input(type="number" name="min" value="300")
+                input(type="number" name="max" value="700")
             ul.catalog-filter__list
                 li.catalog-filter__item
                     label.custom-checkbox

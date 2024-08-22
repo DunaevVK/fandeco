@@ -47,6 +47,11 @@ window.addEventListener('load', () => {
         let currentValue = parseInt(changerInput.value);
         currentValue--;
         changerInput.value = currentValue;
+        if (!changerInput.value) {
+            changerInput.value = 1
+            changerMinus.classList.add('changer__btn_disabled')
+            changerPlus.classList.remove('changer__btn_disabled')
+        }
         if (changerInput.value <= 1) {
             changerInput.value = 1
             changerMinus.classList.add('changer__btn_disabled')

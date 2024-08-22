@@ -25,13 +25,16 @@
         @media (min-width: $lg) {
             flex-direction: row;
             align-items: center;
-            justify-content: space-between;
+            // justify-content: space-between;
         }
 
         &_info {
             display: flex;
             flex-direction: column;
             gap: 20px;
+            // min-width: 66%;
+            width: 66%;
+            justify-content: flex-start;
 
             @media (min-width: $lg) {
                 flex-direction: row;
@@ -69,12 +72,12 @@
             display: flex;
             flex-direction: column;
             row-gap: 10px;
-
+            min-width: 33%;
 
             @media (min-width: $lg) {
                 flex-direction: row;
                 align-items: center;
-                min-width: 413px;
+                // min-width: 360px;
                 column-gap: 20px;
             }
 
@@ -96,8 +99,8 @@
                 height: 20px;
                 background: center no-repeat url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjciIGhlaWdodD0iMjYiIHZpZXdCb3g9IjAgMCAyNyAyNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEzLjUwOTUgMC41TDE2LjU5NjUgMTAuMDAxSDI2LjU4NjVMMTguNTA0NCAxNS44NzNMMjEuNTkxNSAyNS4zNzRMMTMuNTA5NSAxOS41MDJMNS40Mjc0MSAyNS4zNzRMOC41MTQ0OCAxNS44NzNMMC40MzI0MzMgMTAuMDAxSDEwLjQyMjRMMTMuNTA5NSAwLjVaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K);
                 background-size: contain;
-
-                @media (min-width: $lg) {
+                
+                @media (min-width: $xl) {
                     width: 30px;
                     height: 30px;
                 }
