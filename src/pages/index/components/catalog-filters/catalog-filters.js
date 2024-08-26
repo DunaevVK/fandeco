@@ -23,47 +23,60 @@ const initCatalogFiltersScripts = () => {
         })
 
     })
-    let rangeMin = 100;
-    const range = document.querySelector(".range-selected");
-    const rangeInput = document.querySelectorAll(".range-input input");
-    const rangePrice = document.querySelectorAll(".range-price input");
 
-    rangeInput.forEach((input) => {
-        input.addEventListener("input", (e) => {
-            let minRange = parseInt(rangeInput[0].value);
-            let maxRange = parseInt(rangeInput[1].value);
-            if (maxRange - minRange < rangeMin) {
-                if (e.target.className === "min") {
-                    rangeInput[0].value = maxRange - rangeMin;
-                } else {
-                    rangeInput[1].value = minRange + rangeMin;
-                }
-            } else {
-                rangePrice[0].value = minRange;
-                rangePrice[1].value = maxRange;
-                range.style.left = (minRange / rangeInput[0].max) * 100 + "%";
-                range.style.right = 100 - (maxRange / rangeInput[1].max) * 100 + "%";
-            }
-        });
-    });
+    let rangeMin = 100; //Растояние между ползунками
+    const range = document.querySelectorAll(".range"); //Все ползунки на странице
 
-    rangePrice.forEach((input) => {
-        input.addEventListener("input", (e) => {
-            let minPrice = rangePrice[0].value;
-            let maxPrice = rangePrice[1].value;
-            if (maxPrice - minPrice >= rangeMin && maxPrice <= rangeInput[1].max) {
-                if (e.target.className === "min") {
-                    rangeInput[0].value = minPrice;
-                    range.style.left = (minPrice / rangeInput[0].max) * 100 + "%";
+    range.forEach(el => {
+        const rangeSelected = el.querySelector(".range-selected");
+        const minRangeInput = el.querySelector(".min");
+        const maxRangeInput = el.querySelector(".max");
+        const minPriceInput = el.querySelector(".price-min");
+        const maxPriceInput = el.querySelector(".price-max");
+
+        // Обработчик для ползунков диапазона
+        [minRangeInput, maxRangeInput].forEach((input) => {
+            input.addEventListener("input", (e) => {
+                let minRange = parseInt(minRangeInput.value);
+                let maxRange = parseInt(maxRangeInput.value);
+
+                if (maxRange - minRange < rangeMin) {
+                    if (e.target.className === "min") {
+                        minRangeInput.value = maxRange - rangeMin;
+                    } else {
+                        maxRangeInput.value = minRange + rangeMin;
+                    }
                 } else {
-                    rangeInput[1].value = maxPrice;
-                    range.style.right = 100 - (maxPrice / rangeInput[1].max) * 100 + "%";
+                    minPriceInput.value = minRange;
+                    maxPriceInput.value = maxRange;
+                    rangeSelected.style.left = (minRange / minRangeInput.max) * 100 + "%";
+                    rangeSelected.style.right = 100 - (maxRange / maxRangeInput.max) * 100 + "%";
                 }
-            }
+            });
         });
-    });
+
+        // Обработчик для ввода цен
+        [minPriceInput, maxPriceInput].forEach((input) => {
+            input.addEventListener("input", (e) => {
+                let minPrice = parseInt(minPriceInput.value);
+                let maxPrice = parseInt(maxPriceInput.value);
+
+                if (maxPrice - minPrice >= rangeMin && maxPrice <= maxRangeInput.max) {
+                    if (e.target.className === "price-min") {
+                        minRangeInput.value = minPrice;
+                        rangeSelected.style.left = (minPrice / minRangeInput.max) * 100 + "%";
+                    } else {
+                        maxRangeInput.value = maxPrice;
+                        rangeSelected.style.right = 100 - (maxPrice / maxRangeInput.max) * 100 + "%";
+                    }
+                }
+            });
+        });
+    })
 }
 
 window.addEventListener('load', () => {
     initCatalogFiltersScripts()
 })
+
+

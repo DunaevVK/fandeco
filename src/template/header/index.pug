@@ -1,10 +1,10 @@
 .container
 	.header-info
-		a(href="#!").header-info__logo
+		a(href="/index.html").header-info__logo
 			img(src="img/LightOpt.png", alt="LightOpt")
 		.header-info__search
 			input(type="text" placeholder="Поиск по каталогу").header-info__input-text
-			button.header-info__btn.header-info__menu-search.btn-reset 
+			button.header-info__btn.header-info__menu-search.btn-reset
 		ul.header-info__menu
 			li.header-info__menu-item
 				button.header-info__btn.btn-reset.header-info__menu--acc
@@ -17,25 +17,26 @@
 	nav.nav
 		ul.nav__list
 			li.nav__item
-				a.nav__link(href="#!") каталог
+				a.nav__link(href="/catalog.html") каталог
 			li.nav__item
 				a.nav__link(href="#!") архитекторам и дизайнерам
 			li.nav__item
 				a.nav__link(href="#!") где купить?
 			li.nav__item
 				a.nav__link(href="#!") контакты
+
 	nav.nav-mobile
 		.nav-mobile__card-list
 			.nav-mobile__card
 				.nav-mobile__top
 					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile-person
+						.nav-mobile__pic.nav-mobile__pic-person
 						.nav-mobile__title Личный кабинет
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Функциональное освещение
-					ul.nav-mobile__list
+					//- ul.nav-mobile__list
 						li.nav-mobile__item • Системы освещения
 						li.nav-mobile__item • Витринные светильники
 						li.nav-mobile__item • Гибкий неон
@@ -44,11 +45,11 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Уличное освещение
-					ul.nav-mobile__list
+					//- ul.nav-mobile__list
 						li.nav-mobile__item • Системы освещения
 						li.nav-mobile__item • Витринные светильники
 						li.nav-mobile__item • Гибкий неон
@@ -57,11 +58,11 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Источники света
-					ul.nav-mobile__list
+					//- ul.nav-mobile__list
 						li.nav-mobile__item • Системы освещения
 						li.nav-mobile__item • Витринные светильники
 						li.nav-mobile__item • Гибкий неон
@@ -70,11 +71,11 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Управление светом
-					ul.nav-mobile__list
+					//- ul.nav-mobile__list
 						li.nav-mobile__item • Системы освещения
 						li.nav-mobile__item • Витринные светильники
 						li.nav-mobile__item • Гибкий неон
@@ -82,11 +83,11 @@
 						li.nav-mobile__item • Потолочные светильники
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
+						.nav-mobile__plus
 						.nav-mobile__title Декоративное освещение
-					ul.nav-mobile__list
+					//- ul.nav-mobile__list
 						li.nav-mobile__item • Системы освещения
 						li.nav-mobile__item • Витринные светильники
 						li.nav-mobile__item • Гибкий неон
@@ -94,11 +95,11 @@
 						li.nav-mobile__item • Потолочные светильники
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Источники питания
-					ul.nav-mobile__list
+					//- ul.nav-mobile__list
 						li.nav-mobile__item • Системы освещения
 						li.nav-mobile__item • Витринные светильники
 						li.nav-mobile__item • Гибкий неон
@@ -107,11 +108,11 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Аксессуары для светильников
-					ul.nav-mobile__list
+					//- ul.nav-mobile__list
 						li.nav-mobile__item • Системы освещения
 						li.nav-mobile__item • Витринные светильники
 						li.nav-mobile__item • Гибкий неон
@@ -123,13 +124,16 @@
 			.nav-mobile__card
 				.nav-mobile__top
 					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile-present
-						.nav-mobile__title каталог
+						.nav-mobile__pic.nav-mobile__pic-present
+						.nav-mobile__title-wrap
+							.nav-mobile__title каталог
+							.nav-mobile__open-icon
+				//- .nav-mobile__bottom.nav-mobile__bottom-open
 				.nav-mobile__bottom
 					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
+						.nav-mobile__plus
 						.nav-mobile__title Функциональное освещение
-					ul.nav-mobile__list
+					ul.nav-mobile__list.nav-mobile__list-open
 						li.nav-mobile__item • Системы освещения
 						li.nav-mobile__item • Витринные светильники
 						li.nav-mobile__item • Гибкий неон
@@ -137,12 +141,15 @@
 						li.nav-mobile__item • Потолочные светильники
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
-
 				.nav-mobile__bottom
 					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
+						.nav-mobile__plus
+						.nav-mobile__title Функциональное освещение
+				.nav-mobile__bottom
+					.nav-mobile__card-wrap
+						.nav-mobile__plus
 						.nav-mobile__title Уличное освещение
-					ul.nav-mobile__list
+					//- ul.nav-mobile__list
 						li.nav-mobile__item • Системы освещения
 						li.nav-mobile__item • Витринные светильники
 						li.nav-mobile__item • Гибкий неон
@@ -153,9 +160,9 @@
 
 				.nav-mobile__bottom
 					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
+						.nav-mobile__plus
 						.nav-mobile__title Источники света
-					ul.nav-mobile__list
+					//- ul.nav-mobile__list
 						li.nav-mobile__item • Системы освещения
 						li.nav-mobile__item • Витринные светильники
 						li.nav-mobile__item • Гибкий неон
@@ -166,9 +173,9 @@
 
 				.nav-mobile__bottom
 					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
+						.nav-mobile__plus
 						.nav-mobile__title Управление светом
-					ul.nav-mobile__list
+					//- ul.nav-mobile__list
 						li.nav-mobile__item • Системы освещения
 						li.nav-mobile__item • Витринные светильники
 						li.nav-mobile__item • Гибкий неон
@@ -178,9 +185,9 @@
 						li.nav-mobile__item • Светодиодные ленты
 				.nav-mobile__bottom
 					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
+						.nav-mobile__plus
 						.nav-mobile__title Декоративное освещение
-					ul.nav-mobile__list
+					//- ul.nav-mobile__list
 						li.nav-mobile__item • Системы освещения
 						li.nav-mobile__item • Витринные светильники
 						li.nav-mobile__item • Гибкий неон
@@ -190,9 +197,9 @@
 						li.nav-mobile__item • Светодиодные ленты
 				.nav-mobile__bottom
 					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
+						.nav-mobile__plus
 						.nav-mobile__title Источники питания
-					ul.nav-mobile__list
+					//- ul.nav-mobile__list
 						li.nav-mobile__item • Системы освещения
 						li.nav-mobile__item • Витринные светильники
 						li.nav-mobile__item • Гибкий неон
@@ -203,9 +210,9 @@
 
 				.nav-mobile__bottom
 					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
+						.nav-mobile__plus
 						.nav-mobile__title Аксессуары для светильников
-					ul.nav-mobile__list
+					//- ul.nav-mobile__list
 						li.nav-mobile__item • Системы освещения
 						li.nav-mobile__item • Витринные светильники
 						li.nav-mobile__item • Гибкий неон
@@ -213,13 +220,17 @@
 						li.nav-mobile__item • Потолочные светильники
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
-
 			.nav-mobile__card
 				.nav-mobile__top
 					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile-palette
+						.nav-mobile__pic.nav-mobile__pic-person
+						.nav-mobile__title Личный кабинет
+			.nav-mobile__card
+				.nav-mobile__top
+					.nav-mobile__card-wrap
+						.nav-mobile__pic.nav-mobile__pic-palette
 						.nav-mobile__title Архитекторам и дизайнерам
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Функциональное освещение
@@ -232,7 +243,7 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Уличное освещение
@@ -245,7 +256,7 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Источники света
@@ -258,7 +269,7 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Управление светом
@@ -270,7 +281,7 @@
 						li.nav-mobile__item • Потолочные светильники
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Декоративное освещение
@@ -282,7 +293,7 @@
 						li.nav-mobile__item • Потолочные светильники
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Источники питания
@@ -295,7 +306,7 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Аксессуары для светильников
@@ -311,13 +322,13 @@
 			.nav-mobile__card
 				.nav-mobile__top
 					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile-puzzles
+						.nav-mobile__pic.nav-mobile__pic-puzzles
 						.nav-mobile__title О бренде
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Функциональное освещение
-					ul.nav-mobile__list
+					//- ul.nav-mobile__list
 						li.nav-mobile__item • Системы освещения
 						li.nav-mobile__item • Витринные светильники
 						li.nav-mobile__item • Гибкий неон
@@ -326,7 +337,7 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Уличное освещение
@@ -339,7 +350,7 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Источники света
@@ -352,7 +363,7 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Управление светом
@@ -364,7 +375,7 @@
 						li.nav-mobile__item • Потолочные светильники
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Декоративное освещение
@@ -376,7 +387,7 @@
 						li.nav-mobile__item • Потолочные светильники
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Источники питания
@@ -389,7 +400,7 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Аксессуары для светильников
@@ -405,9 +416,9 @@
 			.nav-mobile__card
 				.nav-mobile__top
 					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile-marker
+						.nav-mobile__pic.nav-mobile__pic-marker
 						.nav-mobile__title Где купить ?
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Функциональное освещение
@@ -420,7 +431,7 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Уличное освещение
@@ -433,7 +444,7 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Источники света
@@ -446,7 +457,7 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Управление светом
@@ -458,7 +469,7 @@
 						li.nav-mobile__item • Потолочные светильники
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Декоративное освещение
@@ -470,7 +481,7 @@
 						li.nav-mobile__item • Потолочные светильники
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Источники питания
@@ -483,7 +494,7 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Аксессуары для светильников
@@ -499,9 +510,9 @@
 			.nav-mobile__card
 				.nav-mobile__top
 					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile-contacts
+						.nav-mobile__pic.nav-mobile__pic-contacts
 						.nav-mobile__title Контакты
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Функциональное освещение
@@ -514,7 +525,7 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Уличное освещение
@@ -527,7 +538,7 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Источники света
@@ -540,7 +551,7 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Управление светом
@@ -552,7 +563,7 @@
 						li.nav-mobile__item • Потолочные светильники
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Декоративное освещение
@@ -564,7 +575,7 @@
 						li.nav-mobile__item • Потолочные светильники
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Источники питания
@@ -577,7 +588,7 @@
 						li.nav-mobile__item • Алюминиевые профили
 						li.nav-mobile__item • Светодиодные ленты
 
-				.nav-mobile__bottom
+				//- .nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile.nav-mobile__plus
 						.nav-mobile__title Аксессуары для светильников

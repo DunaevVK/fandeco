@@ -4,16 +4,20 @@
 .universal-table {
     display: flex;
     flex-direction: column;
-    margin-top: 197px;
-    padding-right: 28px;
+    margin-top: 199px;
+    padding: 0 10px;
+
+    @media (min-width: $xl) {
+        padding-left: 0;
+        padding-right: 28px;
+    }
 
     &__title {
         width: 100%;
         height: 40px;
-        padding: 10.5px 10px;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 17px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 38px;
         text-transform: capitalize;
         border-left: 1px solid #000;
         cursor: pointer;
@@ -21,6 +25,7 @@
         overflow: hidden;
         white-space: nowrap;
         transition: all 0.3s;
+        padding-left: 10px;
 
         @media (min-width: $xl) {
             font-size: 17px;
@@ -29,13 +34,14 @@
         &--active {
             background-color: var(--color-black);
             color: var(--color-white);
-
         }
     }
 
     &__list {
         font-weight: 300;
         margin-bottom: 40px;
+        border: 1px solid var(--color-font-primary);
+        border-top: none;
 
         &:last-of-type {
             margin-bottom: 20px;
@@ -49,13 +55,17 @@
         align-items: center;
         justify-content: space-between;
         padding: 10px;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        @media (min-width: $xl) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
 
         &:nth-of-type(even) {
             background-color: var(--color-grey);
         }
-
     }
 
     &__btn-info {
@@ -71,7 +81,6 @@
     }
 
     &__text {
-
         line-height: 22px;
 
         @media (min-width: $xl) {
@@ -81,7 +90,7 @@
 
         &_blue {
             color: #2399e2;
-            line-height: 21px;
+            line-height: 19px;
         }
 
         &_wrap {
@@ -94,7 +103,6 @@
                     padding-left: 33px;
                     margin-right: -9px;
                 }
-
             }
         }
     }

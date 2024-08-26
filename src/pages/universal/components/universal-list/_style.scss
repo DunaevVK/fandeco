@@ -1,26 +1,63 @@
 @import '../../../../scss/sass-variables';
 
 .universal-list {
-    margin-top: 44px;
+
+    padding-left: 16px;
+
+    @media (min-width: $xl) {
+        padding-left: 0;
+    }
+
+    &__wrap {
+        margin-top: 44px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 27px;
+
+        @media (min-width: $xl) {
+            row-gap: 87px;
+        }
+    }
 
     &__title {
-        font-size: 18px;
+        font-size: 15px;
         line-height: 38px;
+        letter-spacing: -0.1px;
 
-        &_list {
-            margin-top: 86px;
+        @media (min-width: $xl) {
+            font-size: 18px;
+            line-height: 38px;
+        }
+
+        &_ordered {
+            margin-top: 12px;
         }
     }
 
     &__list {
-        margin-top: 4px;
-
         &_two {
-            margin-top: 30px;
+            margin-top: 20px;
+
+            @media (min-width: $xl) {
+                margin-top: 30px;
+            }
+        }
+
+        &_simple {
+            margin-top: 17px;
+
+            @media (min-width: $xl) {
+                margin-top: 2px;
+            }
         }
 
         &_ordered {
+            padding-left: 4px;
             margin-top: 2px;
+
+            @media (min-width: $xl) {
+                padding-left: 0;
+            }
         }
     }
 
@@ -28,9 +65,14 @@
         display: flex;
         align-items: center;
         column-gap: 10px;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 25px;
         padding: 7.5px 0;
+
+        @media (min-width: $xl) {
+            font-size: 18px;
+            line-height: 25px;
+        }
 
         &_text {
             &-bold {
@@ -39,13 +81,15 @@
         }
     }
 
-    & ol {
-        // padding-bottom: 20px;
+    &_ordered {
+        @media (min-width: $xl) {
+            margin-top: -12px;
+        }
 
-        .universal-list__item {
-            column-gap: 5px;
-
+        & ol {
+            .universal-list__item {
+                column-gap: 5px;
+            }
         }
     }
-
 }

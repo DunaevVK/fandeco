@@ -13,6 +13,20 @@ window.addEventListener('load', () => {
     const cardSliderMainImg = document.querySelector('.card-slider__main img');
     const cardSliderImg = document.querySelectorAll('.card-slider__image')
 
+    const customSelect = document.querySelectorAll('.custom-select')
+    customSelect.forEach(el => {
+        el.addEventListener('click', (e) => {
+            e.currentTarget.classList.toggle('custom-select--open')
+            if (e.target.classList.contains('custom-select__option')) {
+
+            }
+            if (e.target.classList.contains('custom-select__option')) {
+                e.currentTarget.querySelector('.custom-select__value').textContent = e.target.textContent;
+            }
+        })
+
+    })
+
     cardSliderImages.addEventListener('click', (e) => {
         if (e.target.classList.contains('card-slider__image')) {
             let src = e.target.querySelector('img').getAttribute('src');

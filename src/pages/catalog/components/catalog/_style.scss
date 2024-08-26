@@ -8,7 +8,6 @@
 
         @media (hover: hover) and (pointer: fine) {
             &:hover {
-                // opacity: 0.6;
                 color: var(--color-font-secondary)
             }
         }
@@ -46,18 +45,21 @@
             &_25 {
                 width: calc((100% - 20px) * 0.25);
             }
+
             &_50 {
                 width: calc((100% - 20px) * 0.5);
             }
+
             &_75 {
                 width: calc((100% - 20px) * 0.75);
             }
+
             &_100 {
                 width: 100%;
             }
         }
 
-        & > .catalog-page__title span {
+        &>.catalog-page__title span {
             @media (min-width: $xl) {
                 font-size: 30px;
                 font-weight: 400;
@@ -84,8 +86,8 @@
             width: 100%;
             min-height: initial;
 
-            & + .catalog-page__collapse {
-                & > .catalog-page__inner {
+            &+.catalog-page__collapse {
+                &>.catalog-page__inner {
                     opacity: 1;
                 }
             }
@@ -118,7 +120,7 @@
             }
         }
 
-        & + .catalog-page__collapse {
+        &+.catalog-page__collapse {
             @media (min-width: $xl) {
                 margin-left: -40px;
             }
@@ -129,8 +131,8 @@
                 transform: rotate(90deg);
             }
 
-            & + .catalog-page__collapse {
-                & > .catalog-page__inner {
+            &+.catalog-page__collapse {
+                &>.catalog-page__inner {
                     opacity: 1;
                 }
             }
@@ -190,7 +192,7 @@
                 }
             }
 
-            & > li {
+            &>li {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
@@ -220,7 +222,8 @@
             width: 100%;
             height: auto;
             color: var(--color-font-primary);
-            line-height: 130%; /* 22.1px */
+            line-height: 130%;
+            /* 22.1px */
         }
 
         i {
@@ -234,9 +237,6 @@
             transition: var(--base-transition);
             transform: rotate(0deg);
 
-            @media (min-width: $xl) {
-                // display: none;
-            }
         }
 
         &.open {
@@ -244,8 +244,8 @@
                 transform: rotate(90deg);
             }
 
-            & + .catalog-page__collapse {
-                & > .catalog-page__inner {
+            &+.catalog-page__collapse {
+                &>.catalog-page__inner {
                     opacity: 1;
                 }
             }
@@ -278,6 +278,7 @@
                 background-image: url("https://aws.massive.ru/artelamp.ru/lightopt/func-light.png");
             }
         }
+
         &_street-light {
             background-image: url("https://aws.massive.ru/artelamp.ru/lightopt/street-light-mob.png");
 
@@ -285,6 +286,7 @@
                 background-image: url("https://aws.massive.ru/artelamp.ru/lightopt/street-light.png");
             }
         }
+
         &_light-source {
             background-image: url("https://aws.massive.ru/artelamp.ru/lightopt/light-source-mob.png");
 
@@ -292,6 +294,7 @@
                 background-image: url("https://aws.massive.ru/artelamp.ru/lightopt/light-source.png");
             }
         }
+
         &_light-manage {
             background-image: url("https://aws.massive.ru/artelamp.ru/lightopt/light-manage-mob.png");
 
@@ -299,6 +302,7 @@
                 background-image: url("https://aws.massive.ru/artelamp.ru/lightopt/light-manage.png");
             }
         }
+
         &_decor-light {
             background-image: url("https://aws.massive.ru/artelamp.ru/lightopt/decor-light-mob.png");
 
@@ -306,6 +310,7 @@
                 background-image: url("https://aws.massive.ru/artelamp.ru/lightopt/decor-light.png");
             }
         }
+
         &_adapters {
             background-image: url("https://aws.massive.ru/artelamp.ru/lightopt/adapters-mob.png");
 
@@ -313,6 +318,7 @@
                 background-image: url("https://aws.massive.ru/artelamp.ru/lightopt/adapters.png");
             }
         }
+
         &_acc {
             background-image: url("https://aws.massive.ru/artelamp.ru/lightopt/acc-mob.png");
 

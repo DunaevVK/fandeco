@@ -8,16 +8,16 @@ section.catalog
                     .sort__select-wrap
                         .custom-select
                             .custom-select__top.sort__select-top
-                                .sort__select-icon
+                                .sort__select-icon.sort__select-icon--default
                                 .custom-select__value.custom-select__value--sort Дешевле
                                 .sort__select-open
                             .custom-select__drop
                                 ul.custom-select__list 
                                     li.custom-select__item.custom-select__item--sort
-                                        .sort__select-icon
+                                        .sort__select-icon.sort__select-icon--default
                                         .custom-select__option.custom-select__option--sort По умолчанию
                                     li.custom-select__item.custom-select__item--sort
-                                        .sort__select-icon
+                                        .sort__select-icon.sort__select-icon--default
                                         .custom-select__option.custom-select__option--sort Дешевле
                                     li.custom-select__item.custom-select__item--sort
                                         .sort__select-icon.sort__select-icon--expensive
@@ -25,11 +25,8 @@ section.catalog
                                     li.custom-select__item.custom-select__item--sort
                                         .sort__select-icon.sort__select-icon--name
                                         .custom-select__option.custom-select__option--sort По наименованию
-                        //- .sort__select-open
-                            //- img(src="img/open_select.svg") 
                 .sort__quantity
                     span.sort__quantity-text Количество
-                    //- input(placeholder="122").sort__quantity-value
                     .custom-select
                         .custom-select__top.sort__quantity-top
                                 .custom-select__value 12

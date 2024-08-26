@@ -2,21 +2,35 @@
 
 .universal-img {
     display: flex;
+    flex-direction: column;
     gap: 40px;
-    margin-top: 65px;
-    font-size: 18px;
-    line-height: 38px;
+    margin-top: 63px;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+
+    @media (min-width: $xl) {
+        flex-direction: row;
+        font-size: 18px;
+        line-height: 38px;
+    }
 
     &__text {
-        width: calc((100% - 40px) /2);
         margin-top: -10px;
         letter-spacing: -0.1px;
+
+        @media (min-width: $xl) {
+            width: calc((100% - 40px) /2);
+        }
     }
 
     &__img {
-        width: calc((100% - 40px) /2);
-        min-width: 53%;
-        padding-right: 28px;
+        padding: 0 10px;
+        @media (min-width: $xl) {
+            width: calc((100% - 40px) /2);
+            min-width: 53.7%;
+            padding-right: 28px;
+        }
 
         & img {
             width: 100%;

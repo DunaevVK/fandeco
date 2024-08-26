@@ -1,5 +1,8 @@
 @import '../../../../scss/sass-variables';
 
+.card-content__bottom {
+    margin-top: 25px;
+}
 
 .card-filters {
     display: flex;
@@ -9,8 +12,6 @@
     margin-top: 20px;
     row-gap: 20px;
 
-    // margin-top: 34px;
-    // gap: 20px;
     @media (min-width: $xl) {
         margin-top: 14px;
     }
@@ -20,12 +21,9 @@
     display: flex;
     flex-direction: column;
 
-    // row-gap: 20px;
-
     &--open {
         .card-filter__toggle {
             &::before {
-                // height: 1px;
                 display: none;
             }
         }
@@ -38,58 +36,30 @@
     &__top {
         display: flex;
         height: 40px;
-        // justify-content: space-between;
         align-items: center;
-        // margin-top: 20px;
-        // min-width: 336px;
         border: 1px solid var(--color-font-primary);
         position: relative;
-        
+
         @media (hover: hover) and (pointer: fine) {
             &:hover {
                 background-color: var(--color-grey-sec);
             }
         }
 
-        // &:not(:first-of-type) {
-        //     margin-top: 20px;
-        // }
-
-        // &-margin {
-        //     margin-top: 40px;
-        // }
-
-        // &--open {
-        //     // .card-filter__list {
-        //     //     display: block;
-        //     // }
-
-        //     .card-filter__toggle {
-        //         &::before {
-        //             // height: 1px;
-        //             // display: none;
-        //         }
-        //     }
-        // }
-
         &_sub {
             display: flex;
             height: 40px;
-            // justify-content: space-between;
             align-items: center;
             margin-top: 20px;
-            // min-width: 336px;
             border: 1px solid #000;
             position: relative;
 
-            // margin-top: 20px;
             @media (hover: hover) and (pointer: fine) {
                 &:hover {
                     background-color: var(--color-grey-sec);
                 }
             }
         }
-
     }
 
     &__title {
@@ -103,7 +73,6 @@
         line-height: 17px;
         text-transform: uppercase;
         border-left: 1px solid #000;
-        // border: 1px solid #000;
         cursor: pointer;
         position: relative;
         overflow: hidden;
@@ -118,19 +87,6 @@
         &--active {
             background-color: var(--color-black);
             color: var(--color-white);
-            // display: none;
-
-            // &::before {
-            //     display: block;
-            //     content: "";
-            //     position: absolute;
-            //     width: 2px;
-            //     height: 10px;
-            //     left: 107%;
-            //     top: 50%;
-            //     transform: translateY(-40%);
-            //     background-color: var(--color-font-primary);
-            // }
         }
     }
 
@@ -207,7 +163,6 @@
     }
 
     &__bottom {
-        // margin-top: 20px;
         display: none;
 
         @media (min-width: $xl) {
@@ -216,8 +171,6 @@
 
         &--open {
             .card-filter__toggle_in::before {
-
-                // height: 1px;
                 display: none;
 
             }
@@ -226,19 +179,11 @@
                 display: block;
             }
         }
-
-        // height: 0;
-        // padding-left: 78px;
-        // margin-top: 20px;
-        // padding-bottom: 5px;
-        // transition: all 0.5s;
     }
 
     &--show {
         display: block;
     }
-
-
 
     &__list {
         display: none;
@@ -263,7 +208,6 @@
         &:nth-of-type(even) {
             background-color: var(--color-grey);
         }
-
     }
 
     &__btn-info {
@@ -272,14 +216,12 @@
         margin-right: 10px;
         background: center no-repeat url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iOC43NzUiIHRyYW5zZm9ybT0icm90YXRlKDkwIDEwIDEwKSIgZmlsbD0iYmxhY2siIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMC40NSIvPgo8cGF0aCBkPSJNNi4wOTczNCAxMC45ODE5TDQuMzgxODQgMTAuOTgxOUw0LjM4MTg0IDkuMDE4M0w2LjA5NzM0IDkuMDE4M0w2LjA5NzM0IDEwLjk4MTlaTTE1LjE4MTggMTAuOTA2NEw3LjMwNTg5IDEwLjkwNjRMNy4zMDU4OSA5LjA3NzNMMTUuMTgxOCA5LjA3NzNMMTUuMTgxOCAxMC45MDY0WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==);
 
-        // rotate: 90deg;
         @media (min-width: $xl) {
             margin-right: 0;
         }
     }
 
     &__text {
-
         line-height: 22px;
 
         @media (min-width: $xl) {
@@ -297,7 +239,6 @@
                     padding-left: 33px;
                     margin-right: -9px;
                 }
-
             }
         }
     }
@@ -348,7 +289,6 @@
     &--open {
         .download-docs__toggle {
             &::before {
-                // height: 1px;
                 display: none;
             }
         }
@@ -431,8 +371,6 @@
             @media (min-width: $xl) {
                 min-width: calc((100% - 20px * 2) / 3);
             }
-
-
         }
     }
 
@@ -447,7 +385,6 @@
         line-height: 17px;
         text-transform: uppercase;
         border-left: 1px solid #000;
-        // border: 1px solid #000;
         cursor: pointer;
         position: relative;
         overflow: hidden;
@@ -462,25 +399,10 @@
         &--active {
             background-color: var(--color-black);
             color: var(--color-white);
-            // display: none;
-
-            // &::before {
-            //     display: block;
-            //     content: "";
-            //     position: absolute;
-            //     width: 2px;
-            //     height: 10px;
-            //     left: 107%;
-            //     top: 50%;
-            //     transform: translateY(-40%);
-            //     background-color: var(--color-font-primary);
-            // }
         }
     }
-
-
 }
 
-.display-none {
-    display: none;
-}
+// .display-none {
+//     display: none;
+// }

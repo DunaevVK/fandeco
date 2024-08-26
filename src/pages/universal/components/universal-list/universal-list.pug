@@ -1,5 +1,6 @@
-.universal-list
-    h3.universal-list__title Маркированный список из 2х позиций
+.universal-list__wrap
+    .universal-list
+        h3.universal-list__title Маркированный список из 2х позиций
         ul.universal-list__list.universal-list__list_two 
             li.universal-list__item
                 span.universal-list__item_text • Стиль 18/reg
@@ -13,9 +14,9 @@
             li.universal-list__item 
                 span.universal-list__item_text • Патрон
                 span.universal-list__item_text-bold Morris
-.universal-list
-    h3.universal-list__title.universal-list__title_list Маркированный список простой
-        ul.universal-list__list 
+    .universal-list
+        h3.universal-list__title Маркированный список простой
+        ul.universal-list__list.universal-list__list_simple 
             li.universal-list__item
                 span.universal-list__item_text • Стиль 18/reg
             li.universal-list__item 
@@ -24,9 +25,9 @@
                 span.universal-list__item_text • Стиль
             li.universal-list__item 
                 span.universal-list__item_text • Патрон
-.universal-list
-    h3.universal-list__title.universal-list__title_list Нумерованный список
-        ol.universal-list__list_ordered 
+    .universal-list.universal-list_ordered
+        h3.universal-list__title.universal-list__title_ordered Нумерованный список
+        ol.universal-list__list.universal-list__list_ordered 
             li.universal-list__item
                 span.universal-list__item_text-bold 1.
                 span.universal-list__item_text Стиль 18/reg
