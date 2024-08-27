@@ -1,13 +1,7 @@
 const initCardBottom = () => {
-    console.log('Здесь можно добавить JS для КарточкиКаталога');
-}
-
-window.addEventListener('load', () => {
-
-    // Добавляем сюда все скрипты для Catalog
-    const cardFilterTop = document.querySelectorAll('.card-filter__top');
-    const cardFilterTopSub = document.querySelectorAll('.card-filter__top_sub');
-    const downloadDocsTop = document.querySelectorAll('.download-docs__top');
+    const cardFilterTop = document.querySelectorAll('.card-filter__top')
+    const cardFilterTopSub = document.querySelectorAll('.card-filter__top_sub')
+    const downloadDocsTop = document.querySelectorAll('.download-docs__top')
     cardFilterTop.forEach(el => {
         el.addEventListener('click', () => {
             el.closest('.card-filter').classList.toggle('card-filter--open')
@@ -29,6 +23,6 @@ window.addEventListener('load', () => {
 
         })
     })
+}
 
-    initCardBottom()
-})
+window.addEventListener('load', initCardBottom)

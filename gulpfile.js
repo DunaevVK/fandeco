@@ -17,7 +17,7 @@ const sourcemaps = require("gulp-sourcemaps")
 const insert = require("gulp-insert")
 const replace = require("gulp-replace")
 const include = require("gulp-include")
-const { execSync } = require("child_process")
+const prettier = require("@bdchauvette/gulp-prettier")
 
 // Task functions for development mode
 const setEnv = (cb) => {
@@ -28,7 +28,6 @@ const fonts = () => src('./src/fonts/src/*.*')
 	.pipe(fonter({
 		formats: ['woff', 'ttf']
 	}))
-	.pipe(src('./src/fonts/*.ttf'))
 	.pipe(ttf2woff2())
 	.pipe(dest("build/fonts"))
 
@@ -157,7 +156,7 @@ const devHtml = () => src("./src/pages/**/index.pug")
 			message: err.message
 		}))
 	}))
-	.pipe(pug({ pretty: true }))
+	.pipe(pug())
 	.pipe(replace(/\/>/g, ">"))
 	.pipe(rename(fileObj => {
 		fileObj.basename = fileObj.dirname
@@ -235,7 +234,14 @@ const buildCustomJs = () => src("./src/pages/**/script.js")
 	.pipe(dest("build/js/pages"))
 
 const buildHtml = () => src("./src/pages/**/index.pug")
-	.pipe(pug({ pretty: true }))
+	.pipe(pug())
+	.pipe(prettier({
+		"printWidth": 10000,
+		"htmlWhitespaceSensitivity": "ignore",
+		"bracketSameLine": true,
+		"singleAttributePerLine": false,
+		"endOfLine": "lf"
+	}))
 	.pipe(replace(/\/>/g, ">"))
 	.pipe(rename(fileObj => {
 		fileObj.basename = fileObj.dirname
