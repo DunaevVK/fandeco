@@ -3,6 +3,8 @@ const initCatalogFiltersScripts = () => {
     const customCheckbox = document.querySelectorAll('.custom-checkbox');
     const catalogFilterTop = document.querySelectorAll('.catalog-filter__top');
     const catalogFilter = document.querySelectorAll('.catalog-filter');
+
+
     document.querySelector('.catalog-filters__btn').addEventListener('click', () => {
         catalogFilter.forEach(el => {
             el.closest('.catalog-filter').classList.toggle('catalog-filter--show')
@@ -33,6 +35,19 @@ const initCatalogFiltersScripts = () => {
         const maxRangeInput = el.querySelector(".max");
         const minPriceInput = el.querySelector(".price-min");
         const maxPriceInput = el.querySelector(".price-max");
+        
+        
+        minPriceInput.addEventListener('change', (e) => {
+            if (!e.currentTarget.value || e.currentTarget.value < 1) {
+                e.currentTarget.value = 1
+            }
+        });
+        maxPriceInput.addEventListener('change', (e) => {
+            if (!e.currentTarget.value || e.currentTarget.value > 1000) {
+                e.currentTarget.value = 1000
+            }
+        });
+        
 
         // Обработчик для ползунков диапазона
         [minRangeInput, maxRangeInput].forEach((input) => {
