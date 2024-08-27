@@ -5,15 +5,20 @@
 		.header-info__search
 			input(type="text" placeholder="Поиск по каталогу").header-info__input-text
 			button.header-info__btn.header-info__menu-search.btn-reset
+
 		ul.header-info__menu
+			// Блок .header-logged показываем только когда пользователь залогинен
+			.header-info__logged
+				a(href="mailto: email@email-company.ru") email@email-company.ru
+
 			li.header-info__menu-item
-				button.header-info__btn.btn-reset.header-info__menu--acc
+				a(href="#!").header-info__btn.btn-reset.header-info__menu--acc
 			li.header-info__menu-item
 				button.header-info__btn.btn-reset.header-info__menu--favorites
 			li.header-info__menu-item
 				button.header-info__btn.btn-reset.header-info__menu--burger
 			li.header-info__menu-item
-				button.header-info__btn.btn-reset.header-info__menu--order
+				a(href="#!").header-info__btn.btn-reset.header-info__menu--order
 	nav.nav
 		ul.nav__list
 			li.nav__item
