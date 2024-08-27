@@ -13,6 +13,13 @@ window.addEventListener('load', () => {
     const cardSliderMainImg = document.querySelector('.card-slider__main img');
     const cardSliderImg = document.querySelectorAll('.card-slider__image')
 
+    function allowNumbersOnly(e) {
+        let code = (e.which) ? e.which : e.keyCode;
+        if (code > 31 && (code < 48 || code > 57)) {
+            e.preventDefault();
+        }
+    }
+
     const customSelect = document.querySelectorAll('.custom-select')
     customSelect.forEach(el => {
         el.addEventListener('click', (e) => {
@@ -40,7 +47,24 @@ window.addEventListener('load', () => {
         e.target.classList.add('card-slider__image_active')
     })
 
+    let count = changerInput.value;
 
+    changerInput.addEventListener('keyup', (e) => {
+        if (e.currentTarget.value == '0') {
+            e.currentTarget.value = 1
+        }
+
+        count = changerInput.value;
+    })
+    changerInput.addEventListener('keypress', (e) => {
+        allowNumbersOnly(e);
+    });
+    changerInput.addEventListener('change', (e) => {
+        if (!e.currentTarget.value || e.currentTarget.value < 1) {
+            e.currentTarget.value = 1
+        }
+        count = changerInput.value;
+    });
     changerInput.addEventListener('input', (e) => {
         if (e.currentTarget.value <= 1) {
             changerMinus.classList.add('changer__btn_disabled')
@@ -48,7 +72,7 @@ window.addEventListener('load', () => {
         } else {
             changerMinus.classList.remove('changer__btn_disabled')
         }
-        if (e.currentTarget.value > 998) {
+        if (e.currentTarget.value > 9998) {
             changerMinus.classList.remove('changer__btn_disabled')
             changerPlus.classList.add('changer__btn_disabled')
         } else {
@@ -58,9 +82,9 @@ window.addEventListener('load', () => {
     })
 
     changerMinus.addEventListener('click', (e) => {
-        let currentValue = parseInt(changerInput.value);
-        currentValue--;
-        changerInput.value = currentValue;
+        // let currentValue = parseInt(changerInput.value);
+        count--;
+        changerInput.value = count;
         if (!changerInput.value) {
             changerInput.value = 1
             changerMinus.classList.add('changer__btn_disabled')
@@ -75,12 +99,12 @@ window.addEventListener('load', () => {
         }
     })
     changerPlus.addEventListener('click', (e) => {
-        let currentValue = parseInt(changerInput.value);
-        currentValue++;
+        // let currentValue = parseInt(changerInput.value);
+        count++;
         changerMinus.classList.remove('changer__btn_disabled')
-        changerInput.value = currentValue;
-        if (changerInput.value > 998) {
-            changerInput.value = 999
+        changerInput.value = count;
+        if (changerInput.value > 9998) {
+            changerInput.value = 9999
 
             changerPlus.classList.add('changer__btn_disabled')
         } else {
