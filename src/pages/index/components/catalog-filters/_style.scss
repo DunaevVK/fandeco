@@ -75,10 +75,11 @@
             align-items: center;
             border: 1px solid #000;
             position: relative;
+            transition: var(--base-transition);
 
             @media (hover: hover) and (pointer: fine) {
                 &:hover {
-                    background-color: var(--color-grey-sec);
+                    background-color: var(--color-lite);
                 }
             }
         }
@@ -215,11 +216,11 @@
         position: relative;
         font-size: 17px;
         line-height: 22px;
-        transition: all 0.3s;
+        transition: var(--base-transition);
 
         @media (hover: hover) and (pointer: fine) {
             &:hover {
-                box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 1);
+                opacity: 0.8;
             }
         }
     }

@@ -241,8 +241,6 @@
         cursor: pointer;
     }
 
-
-
     &__value--sort {
         width: 100%;
         display: none;
@@ -277,6 +275,7 @@
         align-items: center;
         justify-content: center;
         min-height: 38px;
+        transition: var(--base-transition);
 
         &--sort {
             justify-content: flex-start;
@@ -285,12 +284,12 @@
 
         @media (hover: hover) and (pointer: fine) {
             &:hover {
-                background-color: var(--color-font-secondary);
+                background-color: var(--color-lite);
             }
         }
 
         &:not(:last-of-type) {
-            border-bottom: 1px dotted var(--color-font-secondary);
+            border-bottom: 1px dotted var(--color-lite);
         }
     }
 
@@ -308,5 +307,4 @@
             display: block;
         }
     }
-
 }
