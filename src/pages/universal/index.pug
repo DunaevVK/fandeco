@@ -14,4 +14,127 @@ block breadcrumbs
     +breadcrumbs(["Главная", "Продукция"])
 
 block content
-    include components/universal/universal.pug
+
+    section.universal
+        .container
+            .universal__wrapper
+                h1 Заголовок первого уровня
+                h2 Заголовок второго уровня
+                h3 Заголовок третьего уровня
+                h4 Заголовок четвертого уровня
+                h5 Заголовок пятого уровня
+                h6 Заголовок шестого уровня
+
+
+                p
+                    br
+                    | В основе дизайна светильников этой серии лежит  
+                    a(href="#!") трехмерная ритмическая композиция  
+                    | из геометрических тел. На тонких пересекающихся между собой стержнях установлены цилиндрические плафоны, каждый из которых вращается на 340° в горизонтальной и 90° – в вертикальной плоскостях. За счет безрамочной конструкции плафона и интегрированного LED-модуля обеспечивается яркое равномерное свечение по всей поверхности рассеивателя.
+
+                p
+                    i В основе дизайна светильников этой серии лежит трехмерная ритмическая композиция из геометрических тел. На тонких пересекающихся между собой стержнях установлены цилиндрические плафоны, каждый из которых вращается на 340° в горизонтальной и 90° – в вертикальной плоскостях. За счет безрамочной конструкции плафона и интегрированного LED-модуля обеспечивается яркое равномерное свечение по всей поверхности рассеивателя.
+
+
+
+                ul
+                    li Стиль
+                        strong Morris
+                    li Коллекция
+                        strong Morris
+                    li Стиль
+                        strong Morris
+                    li Патрон
+                        strong Morris
+
+
+                ol
+                    li Стиль
+                    li Коллекция
+                    li Стиль
+                    li Патрон
+
+
+                blockquote В основе дизайна светильников этой серии лежит трехмерная ритмическая композиция из геометрических тел.
+
+
+                figure
+                    img(src='img/slider-1.jpg' alt='')
+                    figcaption Рис. Картинка с подписью
+
+
+                table
+                    tr
+                        td Артикул
+                        td A8889LM-8GY
+                    tr
+                        td Интерьер
+                        td Для гостиной, Для кафе, ресторанов, Для офиса
+                    tr
+                        td Бренд
+                        td Arte Lamp
+                    tr
+                        td Мощность
+                        td 40 W
+                    tr
+                        td Бренд
+                        td Италия
+                    tr
+                        td Патрон
+                        td Е14
+                    tr
+                        td Коллекция
+                        td MORRIS
+                    tr
+                        td Напряжение
+                        td 220 V
+                    tr
+                        td Материал плафона
+                        td Без плафона
+                    tr
+                        td Количество патронов
+                        td 8 шт
+                    tr
+                        td Материал арматуры
+                        td Акрил
+                    tr
+                        td Крепеж
+                        td На крюк
+                    tr
+                        td Мощность
+                        td 40 W
+                    tr
+                        td Площадь освещения
+                        td 24 м2
+                    tr
+                        td IP
+                        td 20
+                    tr
+                        td Тип лампы
+                        td Накаливания
+                    tr
+                        td Стиль лампы
+                        td Классический
+                    tr
+                        td Место применения
+                        td В квартиру, В комнату
+                    tr
+                        td Вид рассеивателя
+                        td Нет
+                    tr
+                        td Диммер
+                        td Да
+
+                img(src="img/slider-2.jpg" alt="")
+
+    section.pagination
+        .pagination__btns
+            button.btn--white.btn-reset.pagination-btn.pagination-btn--left
+            button.btn--white.btn-reset.pagination-btn 1
+            button.btn--white.btn-reset.pagination-btn 2
+            button.btn--white.btn-reset.pagination-btn 3
+            button.btn--white.btn-reset.pagination-btn 4
+            button.btn--white.btn-reset.pagination-btn ...
+            button.btn--white.btn-reset.pagination-btn 25
+            button.btn--white.btn-reset.pagination-btn.pagination-btn--right
+

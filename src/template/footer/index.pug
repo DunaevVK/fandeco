@@ -55,15 +55,17 @@
         .footer__bottom
             .footer__bottom_text  &copy; 2019—2024 Fandeco.ru. Все права защищены
 
-    //- .footer__btn_wrap
-    //-     button.footer__btn.footer-home.btn-reset
-    //-     span.footer__text Главная
-    //- .footer__btn_wrap
-    //-     button.footer__btn.footer-search.btn-reset
-    //-     span.footer__text Поиск
-    //- .footer__btn_wrap    
-    //-     button.footer__btn.footer-order.btn-reset
-    //-     span.footer__text Заказы
-    //- .footer__btn_wrap
-    //-     button.footer__btn.footer-acc.btn-reset
-    //-     span.footer__text Аккаунт
+
+nav.footer__nav
+    a(href="#!").footer__nav-item
+        span.pic.pic_home
+        span.txt Главная
+    button.footer__nav-item.active
+        span.pic.pic_search
+        span.txt Поиск
+    a(href="#!").footer__nav-item
+        span.pic.pic_orders
+        span.txt Заказы
+    a(href="#!").footer__nav-item
+        span.pic.pic_account
+        span.txt Аккаунт

@@ -5,19 +5,24 @@
 		.header-info__search
 			input(type="text" placeholder="Поиск по каталогу").header-info__input-text
 			button.header-info__btn.header-info__menu-search.btn-reset
+
 		ul.header-info__menu
+			// Блок .header-logged показываем только когда пользователь залогинен
+			.header-info__logged
+				a(href="mailto: email@email-company.ru") email@email-company.ru
+
 			li.header-info__menu-item
-				button.header-info__btn.btn-reset.header-info__menu--acc
+				a(href="#!").header-info__btn.btn-reset.header-info__menu--acc
 			li.header-info__menu-item
 				button.header-info__btn.btn-reset.header-info__menu--favorites
 			li.header-info__menu-item
 				button.header-info__btn.btn-reset.header-info__menu--burger
 			li.header-info__menu-item
-				button.header-info__btn.btn-reset.header-info__menu--order
+				a(href="#!").header-info__btn.btn-reset.header-info__menu--order
 	nav.nav
 		ul.nav__list
 			li.nav__item
-				a.nav__link(href="/catalog.html") каталог
+				a.nav__link(href="#!") каталог
 			li.nav__item
 				a.nav__link(href="#!") архитекторам и дизайнерам
 			li.nav__item
@@ -157,94 +162,6 @@
 					.nav-mobile__card-wrap
 						.nav-mobile__pic.nav-mobile__pic-person
 						.nav-mobile__title Личный кабинет
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Функциональное освещение
-					//- ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Уличное освещение
-					//- ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Источники света
-					//- ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Управление светом
-					//- ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile__plus
-						.nav-mobile__title Декоративное освещение
-					//- ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Источники питания
-					//- ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Аксессуары для светильников
-					//- ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
 
 			.nav-mobile__card
 				.nav-mobile__top
@@ -253,7 +170,6 @@
 						.nav-mobile__title-wrap
 							.nav-mobile__title каталог
 							.nav-mobile__open-icon
-				//- .nav-mobile__bottom.nav-mobile__bottom-open
 				.nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile__plus
@@ -274,77 +190,32 @@
 					.nav-mobile__card-wrap
 						.nav-mobile__plus
 						.nav-mobile__title Уличное освещение
-					//- ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
 
 				.nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile__plus
 						.nav-mobile__title Источники света
-					//- ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
 
 				.nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile__plus
 						.nav-mobile__title Управление светом
-					//- ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
+
 				.nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile__plus
 						.nav-mobile__title Декоративное освещение
-					//- ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
+
 				.nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile__plus
 						.nav-mobile__title Источники питания
-					//- ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
 
 				.nav-mobile__bottom
 					.nav-mobile__card-wrap
 						.nav-mobile__plus
 						.nav-mobile__title Аксессуары для светильников
-					//- ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
+
 			.nav-mobile__card
 				.nav-mobile__top
 					.nav-mobile__card-wrap
@@ -355,373 +226,21 @@
 					.nav-mobile__card-wrap
 						.nav-mobile__pic.nav-mobile__pic-palette
 						.nav-mobile__title Архитекторам и дизайнерам
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Функциональное освещение
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Уличное освещение
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Источники света
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Управление светом
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Декоративное освещение
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Источники питания
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Аксессуары для светильников
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
 
 			.nav-mobile__card
 				.nav-mobile__top
 					.nav-mobile__card-wrap
 						.nav-mobile__pic.nav-mobile__pic-puzzles
 						.nav-mobile__title О бренде
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Функциональное освещение
-					//- ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Уличное освещение
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Источники света
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Управление светом
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Декоративное освещение
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Источники питания
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Аксессуары для светильников
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
 
 			.nav-mobile__card
 				.nav-mobile__top
 					.nav-mobile__card-wrap
 						.nav-mobile__pic.nav-mobile__pic-marker
 						.nav-mobile__title Где купить ?
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Функциональное освещение
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Уличное освещение
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Источники света
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Управление светом
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Декоративное освещение
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Источники питания
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Аксессуары для светильников
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
 
 			.nav-mobile__card
 				.nav-mobile__top
 					.nav-mobile__card-wrap
 						.nav-mobile__pic.nav-mobile__pic-contacts
 						.nav-mobile__title Контакты
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Функциональное освещение
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Уличное освещение
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Источники света
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Управление светом
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Декоративное освещение
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Источники питания
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты
-
-				//- .nav-mobile__bottom
-					.nav-mobile__card-wrap
-						.nav-mobile.nav-mobile__plus
-						.nav-mobile__title Аксессуары для светильников
-					ul.nav-mobile__list
-						li.nav-mobile__item • Системы освещения
-						li.nav-mobile__item • Витринные светильники
-						li.nav-mobile__item • Гибкий неон
-						li.nav-mobile__item • Настенные светильники
-						li.nav-mobile__item • Потолочные светильники
-						li.nav-mobile__item • Алюминиевые профили
-						li.nav-mobile__item • Светодиодные ленты

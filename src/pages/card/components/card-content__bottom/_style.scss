@@ -39,10 +39,11 @@
         align-items: center;
         border: 1px solid var(--color-font-primary);
         position: relative;
+        transition: var(--base-transition);
 
         @media (hover: hover) and (pointer: fine) {
             &:hover {
-                background-color: var(--color-grey-sec);
+                background-color: var(--color-lite);
             }
         }
 
@@ -53,10 +54,11 @@
             margin-top: 20px;
             border: 1px solid #000;
             position: relative;
+            transition: var(--base-transition);
 
             @media (hover: hover) and (pointer: fine) {
                 &:hover {
-                    background-color: var(--color-grey-sec);
+                    background-color: var(--color-lite);
                 }
             }
         }
@@ -265,8 +267,17 @@
             display: inline-block;
             color: white;
             background-color: var(--color-font-primary);
+            border: 1px solid var(--color-font-primary);
             text-transform: uppercase;
             cursor: pointer;
+            transition: var(--base-transition);
+
+            @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    background-color: transparent;
+                    color: var(--color-font-primary);
+                }
+            }
 
             @media (min-width: $xl) {
                 max-width: 20.8%;
@@ -304,10 +315,11 @@
         align-items: center;
         border: 1px solid var(--color-font-primary);
         position: relative;
+        transition: var(--base-transition);
 
         @media (hover: hover) and (pointer: fine) {
             &:hover {
-                background-color: var(--color-grey-sec);
+                background-color: var(--color-lite);
             }
         }
     }
@@ -402,7 +414,3 @@
         }
     }
 }
-
-// .display-none {
-//     display: none;
-// }
