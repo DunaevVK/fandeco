@@ -89,6 +89,7 @@
         flex-shrink: 0;
         align-items: center;
         gap: 5px;
+        margin: 0;
 
         @media (min-width: $md) {
             gap: 20px;
@@ -243,7 +244,7 @@
             content: '';
             display: block;
             position: absolute;
-            bottom: -15.5px;
+            bottom: -31.5px;
             left: 50%;
             transform: translateX(-50%) scale(0);
             width: 10px;
